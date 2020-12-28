@@ -14,13 +14,35 @@
     <title>Project Showcase</title>
   </head>
   <body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">AVM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">Skills</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <nav class="d-none d-xl-block col-xl-2 order-2 navigation" aria-label="Secondary navigation">
+        <nav class="d-none d-xl-block pt-5 col-xl-2 order-2 navigation" aria-label="Secondary navigation">
           <ul class="section-nav">
             <li class="nav-item"><a href="#intro">Introduction</a></li>
-            <li class="nav-item"><a href="#forest-savr">Forest SaVR</a></li>
-            <li class="nav-item"><a href="#proof-guide">Proof Guide</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
           </ul>
 
           <div class="pl-4">
@@ -31,7 +53,7 @@
         </nav>
         <main class="col-md-12 col-xl-10 py-md-3 pl-md-5 bd-content" role="main">
           <div class="alert alert-warning" role="alert">
-            This page is in development for now. Apologies if it hurts your eyes.
+            This site is in development for now. Apologies if it is confusing or if it hurts your eyes.
           </div>
 
           <h1 class="display-1 hello pb-5" id="intro">Hello! I'm Adriano </h1>
@@ -65,47 +87,12 @@
             <a href="https://www.linkedin.com/in/adriano-viegas-milani" target="_blank" class="px-3 h1"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:a.viegasmilani@gmail.com" target="_blank" class="px-3 h1"><i class="fas fa-envelope"></i></a>
           </div>
-          <h1>Projects</h1>
+          <h1 class="link-target" id="projects">Projects</h1>
+          
+          <p class="my-3 m-md-3">
+            <a class="btn btn-outline-secondary" href="projects.html">See Projects <i class="fas fa-arrow-alt-circle-right"></i></a>
 
-          <div class="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center bg-light">
-            <div class="col-md-9 p-lg-5 mx-auto my-5">
-              <h1 class="display-4 font-weight-normal" id="forest-savr" >Forest SaVR <i class="fas fa-vr-cardboard"></i></h1>
-              <p class="lead">Forest SaVR is a Virtual-Reality application to raise awareness of deforestation <i class="fas fa-tree"></i>.</p>
-              <p class="text-justify">
-                 It is developed as a multi-semester project for the Bachelor in Computer Science of the University of Luxembourg.
-                 This project is made as part of the <a href="https://vrarlab.uni.lu/">VR/AR LAB</a> with Jean Botev and is developed in unity <i class="fab fa-unity"></i>.
-                 Forest SaVR received the <b>best demo/poster award</b> at the 2020 GI VR/AR Workshop in Trier, Germany.
-                 A newer version is in development and our objective is to transform it into a playable, enjoyable and educative serious game.
-                 - Version showed was made in 2019, 
-                </p>
-              <div class="embed-responsive embed-responsive-16by9 my-3">
-                <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/E93NYJ476wk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        
-          <div class="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center bg-light">
-            <div class="col-md-9 p-lg-5 mx-auto my-5">
-              <h1 class="display-4 font-weight-normal" id="proof-guide">Proof Guide <i class="far fa-window-maximize"></i></h1>
-              <p class="lead">Proof Guide is a responsive website with interactive lessons on mathematical proofs and their applications.</p>
-              <p class="text-justify">
-                The objective was to make an interactive, enjoyable, and understandable learning experience for students starting discrete mathematics.
-                The philosophy behind this project was that students learn better when they are in an enjoyable environment,
-                so instead of discovering how to write proofs through a simple pdf,
-                they could read the lesson, and solve simple exercises in a responsive (and beautiful) website.
-
-                It was developed as a semester project for the Bachelor in Computer Science of the University of Luxembourg. - Made in 2019</p>
-              <img src="proof-guide.png" class="img-fluid my-3" alt="Screenshot of website">
-              <a class="btn btn-outline-secondary" href="https://dridrar.github.io/BSP2/">See Website <i class="fas fa-link"></i></a>
-            </div>
-          </div>
-
-          <div class="position-relative overflow-hidden p-3 p-md-5 mb-n5 mt-3 mx-md-3 text-center bg-light">
-            <div class="col-md-9 p-lg-5 mx-auto my-5">
-              <h1 class="display-4 font-weight-normal"><i class="fas fa-ellipsis-v"></i></h1>
-              <p class="lead font-weight-normal text-justify">New projects will be added soon.</p>
-            </div>
-          </div>
+          </p>
           
         </main>
       </div>
