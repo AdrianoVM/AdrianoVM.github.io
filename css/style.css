@@ -2,7 +2,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 2rem;
-    height: calc(100vh - 2rem);
+    height: calc(100vh - 4rem);
     overflow-y: auto;
 }
 
@@ -30,4 +30,13 @@
 
 .hello {
     font-size: calc(1.5rem + 3.3vw);
+}
+
+.link-target::before {
+    display: block; 
+    content: " "; 
+    margin-top: -285px; 
+    height: 285px; 
+    visibility: hidden; 
+    pointer-events: none;
 }
