@@ -3,101 +3,118 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
-
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <title>Project Showcase</title>
   </head>
   <body>
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">AVM</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="skills.html">Skills</a>
-          </li>
-        </ul>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AVM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
 
     <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
+      <div class="row flex-xl-nowrap justify-content-around">
         <nav class="d-none d-xl-block pt-5 col-xl-2 order-2 navigation" aria-label="Secondary navigation">
           <ul class="section-nav">
             <li class="nav-item"><a href="#intro">Introduction</a></li>
             <li class="nav-item"><a href="#forest-savr">Forest SaVR</a></li>
             <li class="nav-item"><a href="#proof-guide">Proof Guide</a></li>
+            <li class="nav-item"><a href="#bsp1">Visual Representation of Legal Concepts</a></li>
           </ul>
 
-          <div class="pl-4">
+          <div class="ps-4">
             <a href="https://www.linkedin.com/in/adriano-viegas-milani" target="_blank" class="p-1"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:a.viegasmilani@gmail.com" target="_blank" class="p-1"><i class="fas fa-envelope"></i></a>
           </div>
 
         </nav>
-        <main class="col-md-12 col-xl-10 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-lg-11 col-xl-9 col-xxl-8 py-md-3 ps-xl-5 bd-content" role="main">
 
           <h1 class="display-1 hello pb-5 link-target" id="intro">Projects</h1>
 
           <p class="my-3 m-md-3">
-            Here is a relatively small list of projects I worked on in the past years, or I am currently working on. 
+            Here is a relatively small list of projects I worked on in the past years, or I am currently working on.
+            Currently all projects shown were worked on as part of the Bachelor Semester Projects (BSP) of the Bachelor in Computer Science at the University of Luxembourg.
 
           </p>
 
           <div class="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center bg-light">
-            <div class="col-md-9 p-lg-5 mx-auto my-5">
-              <h1 class="display-4 font-weight-normal link-target" id="forest-savr" >Forest SaVR <i class="fas fa-vr-cardboard"></i></h1>
+            <div class="col-md-10 mx-auto my-5">
+              <h1 class="display-4 fw-normal link-target" id="forest-savr" >Forest SaVR <i class="fas fa-vr-cardboard"></i></h1>
               <p class="lead">Forest SaVR is a Virtual-Reality application to raise awareness of deforestation <i class="fas fa-tree"></i>.</p>
-              <p class="text-justify">
-                 It is developed as a multi-semester project for the Bachelor in Computer Science of the University of Luxembourg.
+              <p class="text-start">
+                 Forest SaVR is developed as a multi-semester project for the Bachelor in Computer Science of the University of Luxembourg.
                  This project is made as part of the <a href="https://vrarlab.uni.lu/">VR/AR LAB</a> with Jean Botev and is developed in unity <i class="fab fa-unity"></i>.
                  Forest SaVR received the <b>best demo/poster award</b> at the 2020 GI VR/AR Workshop in Trier, Germany.
-                 A newer version is in development and our objective is to transform it into a playable, enjoyable and educative serious game.
-                 - Version showed was made in 2019, 
+                 A newer version is in development, as part of BSP5 and BSP6, and our objective is to transform it into a playable, enjoyable and educative serious game. <br>
+                 - Version showed was made in 2019, as part of BSP3.
                 </p>
-              <div class="embed-responsive embed-responsive-16by9 my-3">
-                <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/E93NYJ476wk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="ratio ratio-16x9 my-3">
+                <iframe src="https://www.youtube.com/embed/E93NYJ476wk" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         
           <div class="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center bg-light">
-            <div class="col-md-9 p-lg-5 mx-auto my-5">
-              <h1 class="display-4 font-weight-normal link-target" id="proof-guide">Proof Guide <i class="far fa-window-maximize"></i></h1>
+            <div class="col-md-10 mx-auto my-5">
+              <h1 class="display-4 fw-normal link-target" id="proof-guide">Proof Guide <i class="far fa-window-maximize"></i></h1>
               <p class="lead">Proof Guide is a responsive website with interactive lessons on mathematical proofs and their applications.</p>
-              <p class="text-justify">
+              <p class="text-start">
                 The objective was to make an interactive, enjoyable, and understandable learning experience for students starting discrete mathematics.
                 The philosophy behind this project was that students learn better when they are in an enjoyable environment,
                 so instead of discovering how to write proofs through a simple pdf,
-                they could read the lesson, and solve simple exercises in a responsive (and beautiful) website.
-
-                It was developed as a semester project for the Bachelor in Computer Science of the University of Luxembourg. - Made in 2019</p>
-              <img src="proof-guide.png" class="img-fluid my-3" alt="Screenshot of website">
+                they could read the lesson, and solve simple exercises in a responsive (and beautiful) website. <br>
+                - Made in 2019, as part of BSP2</p>
+              <img src="images/proof-guide.png" class="img-fluid my-3" alt="Screenshot of website">
               <a class="btn btn-outline-secondary" href="https://dridrar.github.io/BSP2/">See Website <i class="fas fa-link"></i></a>
             </div>
           </div>
 
+          <div class="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center bg-light">
+            <div class="col-md-10 mx-auto my-5">
+              <h1 class="display-4 fw-normal link-target" id="bsp1">Visual Representation of Legal Concepts</h1>
+              <p class="lead">A visual user interface for a concept recognition system in European and national legislation</p>
+              <p class="text-start">
+                The objective was to create a visual user interface, available as a locally hosted website,
+                for a more user-friendly version of an automatic concept recognition tool which annotates legal documents.
+                This interface allows users to upload their own documents, annotate them with the tool and see the recognized concepts as categorized tooltips. <br>
+
+              - Made in 2018, as part of BSP1</p>
+              <img src="images/bsp1.png" class="img-fluid my-3" alt="Screenshot of the visual user interface">
+            </div>
+          </div>
+
+
           <div class="position-relative overflow-hidden p-3 p-md-5 mb-n5 mt-3 mx-md-3 text-center bg-light">
-            <div class="col-md-9 p-lg-5 mx-auto my-5">
-              <h1 class="display-4 font-weight-normal"><i class="fas fa-ellipsis-v"></i></h1>
-              <p class="lead font-weight-normal text-justify">New projects will be added soon <sup>TM</sup></p>
+            <div class="col-md-10 mx-auto my-5">
+              <h1 class="display-4 fw-normal"><i class="fas fa-ellipsis-v"></i></h1>
+              <p class="lead fw-normal">New projects will be added soon <sup>TM</sup></p>
             </div>
           </div>
           
@@ -106,9 +123,6 @@
     </div>
 
 
-
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>

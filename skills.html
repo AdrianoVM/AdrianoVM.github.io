@@ -3,60 +3,270 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
-
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <title>Project Showcase</title>
   </head>
   <body>
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">AVM</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="skills.html">Skills <span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AVM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="skills.html">Skills</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
 
     <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
+      <div class="row flex-xl-nowrap justify-content-around">
         <nav class="d-none d-xl-block pt-5 col-xl-2 order-2 navigation" aria-label="Secondary navigation">
           <ul class="section-nav">
-            <li class="nav-item"><a href="#intro">Introduction</a></li>
-            <li class="nav-item"><a href="#forest-savr">Forest SaVR</a></li>
-            <li class="nav-item"><a href="#proof-guide">Proof Guide</a></li>
+            <li class="nav-item"><a href="#tools">Tools</a></li>
+            <li class="nav-item"><a href="#languages">Languages</a></li>
           </ul>
 
-          <div class="pl-4">
+          <div class="ps-4">
             <a href="https://www.linkedin.com/in/adriano-viegas-milani" target="_blank" class="p-1"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:a.viegasmilani@gmail.com" target="_blank" class="p-1"><i class="fas fa-envelope"></i></a>
           </div>
 
         </nav>
-        <main class="col-md-12 col-xl-10 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-lg-11 col-xl-9 col-xxl-8 py-md-3 ps-xl-5 bd-content" role="main">
 
           <h1 class="display-1 hello pb-5" id="intro">Skills</h1>
 
-          <p class="my-3 m-md-3"><i class="fas fa-tools"></i> This page is not added yet. <i class="fas fa-tools"></i></p>
+          <p class="my-3 m-md-3">Here is an unordered list of my skills, it is separated in two parts: <br>
+            <a href="#tools"><b>Tools</b></a>, which include programming languages, front-end tools, and any other tool which might be of interest, and <a href="#languages"><b>Languages</b></a>.</p>
+
+          <h1 class="link-target" id="tools">Tools</h1>
+          
+          
+          <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #306998;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" ><i class="fab fa-python"></i></h1>
+                </div>                
+                <div class="card-body">
+                  <h5 class="card-title">Python</h5>
+                  <p class="card-text">Profficiency: +++ <br> Learned through many courses at the University of Luxembourg. (a bit of tensorflow too)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #f0f0f0;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" ><i class="fab fa-unity"></i></h1>
+                </div>                
+                <div class="card-body">
+                  <h5 class="card-title">Unity</h5>
+                  <p class="card-text">Profficiency: +++ <br> Learned through the <a href="projects.html#forest-savr">Forest SaVR</a> project.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #1E9E25;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" >C#</h1>
+                </div>                
+                <div class="card-body">
+                  <h5 class="card-title">C Sharp</h5>
+                  <p class="card-text">Profficiency: ++ <br> Learned through the <a href="projects.html#forest-savr">Forest SaVR</a> project.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #E44D26;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" ><i class="fab fa-html5"></i></h1>
+                </div>                
+                <div class="card-body">
+                  <h5 class="card-title">HTML</h5>
+                  <p class="card-text">Profficiency: +++ <br> Learned through the <a href="projects.html#bsp1">Visual Representation of Legal Concepts</a> and <a href="projects.html#proof-guide">Proof Guide</a> projects, and when building this website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #F0DB4F;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" ><i class="fab fa-js"></i></h1>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Javascript</h5>
+                  <p class="card-text">Profficiency: + <br> Learned through the <a href="projects.html#bsp1">Visual Representation of Legal Concepts</a> and <a href="projects.html#proof-guide">Proof Guide</a> projects.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #264DE4;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" ><i class="fab fa-css3-alt"></i></h1>
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">CSS</h5>
+                  <p class="card-text">Profficiency: +++ <br> Learned mainly through the <a href="projects.html#proof-guide">Proof Guide</a> project and when building this website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #7255AF;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" ><i class="fab fa-bootstrap"></i></h1>
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">Bootstrap</h5>
+                  <p class="card-text">Profficiency: +++ <br> Learned mainly through the <a href="projects.html#proof-guide">Proof Guide</a> project and when building this website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #41B883;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" ><i class="fab fa-vuejs"></i></h1>
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">Vue.js</h5>
+                  <p class="card-text">Profficiency: ++ <br> Learned mainly through the <a href="projects.html#proof-guide">Proof Guide</a> project.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #5382A1;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" ><i class="fab fa-java"></i></h1>
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">Java</h5>
+                  <p class="card-text">Profficiency: + <br> Learned through a course at Kyoto University.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #F37E39;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" ><i class="fab fa-swift"></i></h1>
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">Swift</h5>
+                  <p class="card-text">Profficiency: + <br> Learned through two courses at the University of Luxembourg.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <div class="card-img-top icon-card" style="background-color: #407D7F;">
+                  <h1 class="card-title position-absolute top-50 start-50 translate-middle" ><img src="images/LaTeX_logo.svg" alt="Latex logo" class="img-fluid"></h1>
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">Latex</h5>
+                  <p class="card-text">Profficiency: ++ <br> Learned through all bachelor semester projects, when writing the reports.</p>
+                </div>
+              </div>
+            </div>
+            
+
+
+          </div>
+
+
+          <h1 class="link-target" id="languages">Languages</h1>
+          
+          
+          <div class="row" data-masonry='{"percentPosition": true }'>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <img src="images/Flag_of_the_United_Kingdom.svg" alt="flag of the United Kingdom" class="card-img-top">
+                
+                <div class="card-body">
+                  <h5 class="card-title">English</h5>
+                  <p class="card-text">Profficiency: Bilingual <br> TOEFL iBT score of 110 (November 2020), Cambridge English level 3 C2 certificate (2018).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <img src="images/Flag_of_France.svg" alt="flag of France" class="card-img-top">
+                
+                <div class="card-body">
+                  <h5 class="card-title">French</h5>
+                  <p class="card-text">Profficiency: Native <br> Studied in a French school.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <img src="images/Flag_of_Brazil.svg" alt="flag of Brazil" class="card-img-top">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Portuguese</h5>
+                  <p class="card-text">Profficiency: Native <br> I am Brazilian.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <img src="images/Flag_of_Italy.svg" alt="flag of Italy" class="card-img-top">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Italian</h5>
+                  <p class="card-text">Profficiency: Elementary <br> Learned for 3 years at school.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card text-center">
+                <img src="images/Flag_of_Japan.svg" alt="flag of Japan" class="card-img-top">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Japanese</h5>
+                  <p class="card-text">Profficiency: Elementary <br> Learned during the exchange semester at Kyoto University.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
         </main>
       </div>
@@ -64,8 +274,8 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>

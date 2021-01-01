@@ -44,4 +44,5 @@
 .icon-card {
     height: 100px;
     margin: auto;
+    position: relative;
 }
