@@ -40,3 +40,8 @@
     visibility: hidden; 
     pointer-events: none;
 }
+
+.icon-card {
+    height: 100px;
+    margin: auto;
+}
