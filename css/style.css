@@ -1,7 +1,7 @@
 .navigation {
     position: -webkit-sticky;
     position: sticky;
-    top: 2rem;
+    top: 4rem;
     height: calc(100vh - 4rem);
     overflow-y: auto;
 }
@@ -41,8 +41,28 @@
     pointer-events: none;
 }
 
+.vl {
+    width: 3px;
+    padding: 0%;
+}
+
 .icon-card {
     height: 100px;
     margin: auto;
     position: relative;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.card .progress {
+    border-radius: calc(.25rem - 1px);
+    height: 12px;
+    margin-bottom: 1rem;
 }
