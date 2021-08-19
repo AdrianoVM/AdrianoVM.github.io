@@ -63,3 +63,7 @@ main h2 {
     height: 12px;
     margin-bottom: 1rem;
 }
+
+img{
+    max-width: 80em;
+}
