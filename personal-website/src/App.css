@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+
+
+/*New*/
+.navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
 }
 
-.App-logo {
-  height: 40vmin;
+.section-nav {
+  padding-left: 0;
+  border-left: 1px solid gainsboro;
+}
+
+.nav-item {
+  display: block;
+}
+
+.nav-item a {
+  display: block;
+  padding: 0.2rem 1rem;
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: black;
+
+}
+
+
+.hello {
+  font-size: calc(1.5rem + 3.3vw);
+}
+
+.link-target::before {
+  display: block; 
+  content: " "; 
+  margin-top: -285px; 
+  height: 285px; 
+  visibility: hidden; 
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.vl {
+  width: 3px;
+  padding: 0%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon-card {
+  height: 15vh;
+  margin: auto;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+
+main h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card .progress {
+  border-radius: calc(.25rem - 1px);
+  height: 12px;
+  margin-bottom: 1rem;
+}
+
+img{
+  max-width: 80em;
 }
