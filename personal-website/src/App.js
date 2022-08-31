@@ -5,34 +5,27 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { Nav, Button, Alert, Breadcrumb, Card } from 'react-bootstrap'
 
+import {motion} from 'framer-motion';
+import AnimButton from './components/test'
+import NavB from './components/nav';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './pages';
+import Projects from './pages/projects';
+import Skills from './pages/skills';
+
 function App() {
   return (
 
-    
+    <Router>
     <div className="App">
       <header className="App-header">
-      <Nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">AVM</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-      
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="skills.html">Skills</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </Nav>
+      <NavB></NavB>
         <Card className='mb-3' style={{color: "#000"}}>
           <Card.Img />
           <Card.Body>
@@ -50,10 +43,24 @@ function App() {
           <Breadcrumb.Item>Test2</Breadcrumb.Item>
         </Breadcrumb>
         <Alert variant='success'>This is a butan</Alert>
-        <Button>Test Button</Button>
+        <Button as={motion.button}  
+        whileHover={{ scale: [null, 1.5, 1.4] }}
+      transition={{ duration: 0.2 }}>
+      Test Button
+      </Button>
+      <AnimButton text={"mhh"} linkTo={"/projects"}/>
         
       </header>
+
+      <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/projects" element={<Projects />}/>
+          <Route path="/skills" element={<Skills />}/>
+      </Routes>
     </div>
+    </Router>
+
+    
   );
 }
 
