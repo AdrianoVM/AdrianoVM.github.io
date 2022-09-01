@@ -12,7 +12,7 @@ const Card = ({title, date, color, percent, text}) => {
             
         <div className="card-body">
         <h5 className="card-title">{date}</h5>
-            <ProgressBar animated variant="success" now={percent}/>
+            <ProgressBar striped animated={percent < 100 } variant="success" now={percent}/>
         
         <p className="card-text">{text}</p>
         </div>

@@ -2,6 +2,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react';
 import Card from '../components/card';
 import Timeline from '../components/card/timeline';
+// import MyEval from 'fontawesome.macro'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import { fas } from 'fontawesome.macro'
 
 const Home = () => {
   return (
@@ -9,7 +13,7 @@ const Home = () => {
       <div className="row flex-xl-nowrap justify-content-center">
 
         <main className="col-lg-11 col-xl-9 col-xxl-8 py-md-3 text-center" role="main">
-
+        
           <h1 className="display-1 hello pb-5 link-target" id="intro">Hello there, <br/> Welcome to my website! </h1>
           <div className="container-fluid">
             <div className="row align-items-center">
@@ -19,6 +23,7 @@ const Home = () => {
               <div className="col-5 col-md-2"><i className="fas fa-long-arrow-alt-left"></i> This is me.</div>
               <div className="col-12 col-md-8 text-start">
                 <p className="my-3 m-md-3">
+                <fontawesome icon={fas('square')}/>
                   My name is <b>Adriano Viegas Milani</b>,
                   and this is my website.
                   It is separated in 3 parts: <br/> Overview (this page), <a href="projects.html">Projects</a>, and <a href="skills.html">Skills</a>. <br/>
