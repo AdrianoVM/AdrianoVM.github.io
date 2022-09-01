@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css';
 
 import { Nav, Button, Alert, Breadcrumb, Card } from 'react-bootstrap'
 
@@ -46,7 +46,7 @@ function App() {
         <Button as={motion.button}  
         whileHover={{ scale: [null, 1.5, 1.4] }}
       transition={{ duration: 0.2 }}>
-      Test Button
+      Test Buttons
       </Button>
       <AnimButton text={"mhh"} linkTo={"/projects"}/>
         

@@ -20,13 +20,13 @@
 
 .nav-item a {
   display: block;
-  padding: 0.2rem 1rem;
-  color: grey;
+  padding: 0.2rem 0rem;
+  color: silver;
   text-decoration: none;
 }
 
 .nav-item a:hover {
-  color: black;
+  color: white;
 
 }
 
@@ -69,4 +69,20 @@ main h2 {
 
 img{
   max-width: 80em;
+}
+
+.epfl {
+  background-color: red;
+}
+
+.unilu {
+  background-color: #00AAE5;
+}
+
+.kyoto {
+  background-color: #0E2058;
+}
+
+.vauban {
+  background-color: #494142;
 }

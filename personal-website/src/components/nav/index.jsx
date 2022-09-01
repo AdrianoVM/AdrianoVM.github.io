@@ -7,9 +7,9 @@ import { Nav, Navbar, Container } from 'react-bootstrap'
 const NavB = () => {
     return(
     <Navbar collapseOnSelect sticky="top" expand="sm" bg="dark" variant="dark">
-      <Container>
-        <NavLink to={"/"}>
-        <Navbar.Brand>AVM</Navbar.Brand>
+      <Container fluid>
+        <NavLink to={"/"} className="navbar-brand">
+        AVM
         </NavLink>
         <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
         {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
