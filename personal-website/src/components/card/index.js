@@ -2,7 +2,8 @@ import {motion} from 'framer-motion';
 import classnames from 'classnames';
 import { ProgressBar } from 'react-bootstrap';
 
-const Card = ({title, date, color, percent, text}) => {
+const Card = props => {
+    const {title, date, color, percent} = props;
     return(
 
     <div className="card text-center h-100">
@@ -14,7 +15,7 @@ const Card = ({title, date, color, percent, text}) => {
         <h5 className="card-title">{date}</h5>
             <ProgressBar striped animated={percent < 100 } variant="success" now={percent}/>
         
-        <p className="card-text">{text}</p>
+        <p className="card-text">{props.children} </p>
         </div>
     </div>
     )

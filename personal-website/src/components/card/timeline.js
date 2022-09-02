@@ -11,7 +11,9 @@ const Timeline = ({text, linkTo}) => {
             <div className="d-none d-md-block col-md-5 order-md-1"></div>
             <div className="col-11 col-md-5 order-2 order-md-3">
               <div className="mb-4">
-                <Card title={"EPFL"} date={"2021-2023"} color={"epfl"} percent={50} text={"Master in Computer Science"}></Card>
+                <Card title={"EPFL"} date={"2021-2023"} color={"epfl"} percent={50}>
+                 Master in Computer Science. Specialization in Signals Images and Interfaces
+                </Card>
               </div>
             </div>
         </div>
@@ -25,7 +27,9 @@ const Timeline = ({text, linkTo}) => {
             <div className="d-none d-md-block col-md-5 order-md-2"></div>
             <div className="col-11 col-md-5">
               <div className="mb-4">
-              <Card title={"Kyoto University"} date={"2020-2020"} color={"kyoto"} percent={100} text={"Mobility semester in spring 2020.<br/> All grades between A and A+ (85-100)."}/>
+              <Card title={"Kyoto University"} date={"2020-2020"} color={"kyoto"} percent={100} >
+                Mobility semester in spring 2020.<br/> All grades between A and A+ (85-100).
+              </Card>
               </div>
             </div>
         </div>
@@ -36,7 +40,9 @@ const Timeline = ({text, linkTo}) => {
             <div className="d-none d-md-block col-md-5 order-md-1"></div>
             <div className="col-11 col-md-5 order-2 order-md-3">
               <div className="mb-4">
-              <Card title={"University of Luxembourg"} date={"2018-2021"} color={"unilu"} percent={100} text={"Bachelor in Computer Science, average of 17.8/20."}/>
+              <Card title={"University of Luxembourg"} date={"2018-2021"} color={"unilu"} percent={100} >
+                Bachelor in Computer Science, average of 17.8/20.
+              </Card>
               </div>
             </div>
         </div>
@@ -47,7 +53,10 @@ const Timeline = ({text, linkTo}) => {
             <div className="d-none d-md-block col-md-5 order-md-2"></div>
             <div className="col-11 col-md-5">
               <div className="mb-4">
-              <Card title={"Vauban"} date={"2003-2018"} color={"vauban"} percent={100} text={"French High School of Luxembourg.<br/> Scientific section with specialization in mathematics. <br/> Baccalauréat mention Très bien"}/>
+              <Card title={"Vauban"} date={"2003-2018"} color={"vauban"} percent={100} >
+                French High School of Luxembourg.<br/> Scientific section with specialization in mathematics. <br/>
+                Baccalauréat mention Très bien
+              </Card>
               </div>
             </div>
             

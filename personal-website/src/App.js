@@ -25,7 +25,7 @@ function App() {
     <Router>
     <div className="App">
       <header className="App-header">
-      <NavB></NavB>
+      
         <Card className='mb-3' style={{color: "#000"}}>
           <Card.Img />
           <Card.Body>
@@ -51,7 +51,7 @@ function App() {
       <AnimButton text={"mhh"} linkTo={"/projects"}/>
         
       </header>
-
+      <NavB></NavB>
       <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/projects" element={<Projects />}/>
