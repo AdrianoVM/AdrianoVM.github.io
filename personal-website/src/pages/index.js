@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import adri from '../images/adriano.png'
 import React from 'react';
 import Timeline from '../components/card/timeline';
 
@@ -18,7 +19,7 @@ const Home = () => {
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-5 col-md-2">
-                <img src="images/adriano.png" alt="Picture of Adriano Viegas Milani" className="img-fluid float-start"/>
+                <img src={adri} alt="Picture of Adriano Viegas Milani" className="img-fluid float-start"/>
               </div>
               <div className="col-5 col-md-2"><FontAwesomeIcon icon={faArrowLeftLong}/> This is me.</div>
               <div className="col-12 col-md-8 text-start">
@@ -26,7 +27,7 @@ const Home = () => {
                   My name is <b>Adriano Viegas Milani</b>,
                   and this is my website.
                   It is separated in 3 parts: <br/> Overview (this page), <a href="projects.html">Projects</a>, and <a href="skills.html">Skills</a>. <br/>
-                  I’m currently in the 1st year of the Master in Computer Science at EPFL in Switzerland.
+                  I’m currently in the 2nd year of the Master in Computer Science at EPFL in Switzerland.
                   In this page you can find my education, achievements, and interests below.
                   
                 </p>
