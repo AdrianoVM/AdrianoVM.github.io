@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec688372.css",
-    "main.js": "/static/js/main.ae504a48.js",
+    "main.css": "/static/css/main.f4bb95fd.css",
+    "main.js": "/static/js/main.0a259dac.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/adriano.png": "/static/media/adriano.18e41da8722278dfbf9f.png",
     "static/media/bsp1.png": "/static/media/bsp1.5624d8a13a61d58b04de.png",
     "static/media/proof-guide.png": "/static/media/proof-guide.eebfb1521a8d70224560.png",
+    "static/media/Flag_of_Brazil.svg": "/static/media/Flag_of_Brazil.dcc02bb75f2a1e9e15e0f873c90372e4.svg",
     "index.html": "/index.html",
-    "main.ec688372.css.map": "/static/css/main.ec688372.css.map",
-    "main.ae504a48.js.map": "/static/js/main.ae504a48.js.map",
+    "static/media/Flag_of_the_United_Kingdom.svg": "/static/media/Flag_of_the_United_Kingdom.8c3d2102446be2711b46b83bef6cc68e.svg",
+    "static/media/Flag_of_France.svg": "/static/media/Flag_of_France.6455f145c65bfa6c2980cc1e9ab6afde.svg",
+    "static/media/Flag_of_Italy.svg": "/static/media/Flag_of_Italy.bb2033dcda58d584b313a60a850a36cb.svg",
+    "main.f4bb95fd.css.map": "/static/css/main.f4bb95fd.css.map",
+    "main.0a259dac.js.map": "/static/js/main.0a259dac.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec688372.css",
-    "static/js/main.ae504a48.js"
+    "static/css/main.f4bb95fd.css",
+    "static/js/main.0a259dac.js"
   ]
 }
