@@ -1,17 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import { useState } from 'react';
 import {motion} from 'framer-motion';
 import { NavLink } from "react-router-dom";
 import { Nav, Navbar, Container } from 'react-bootstrap'
 
-const NavB = () => {
+const NavB = (props) => {
+  const {expanded, setExpanded} = props;
+  // const [expanded, setExpanded] = useState(false);
+
     return(
-    <Navbar collapseOnSelect sticky="top" expand="sm" bg="dark" variant="dark">
+    <Navbar expanded={expanded} sticky="top" expand="sm" bg="dark" variant="dark">
       <Container fluid>
-        <NavLink to={"/"} className="navbar-brand">
+        <NavLink to={"/"} onClick={() => setExpanded(false)} className="navbar-brand">
         AVM
         </NavLink>
-        <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
+        <Navbar.Toggle aria-controls='responsive-navbar-nav' data-target="#navbarSupportedContent"
+          onClick={() => setExpanded(!expanded)}
+        />
         {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button> */}
@@ -19,17 +24,17 @@ const NavB = () => {
         <Nav className="me-auto">
           <ul className="navbar-nav me-auto mb-2 mb-sm-0">
             <li className="nav-item">
-            <NavLink to={"/"} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+            <NavLink  to={"/"} onClick={() => setExpanded(false)} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
             Home
             </NavLink>
             </li>
             <li className="nav-item">
-            <NavLink to={"/projects"} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+            <NavLink to={"/projects"} onClick={() => setExpanded(false)} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
             Projects
             </NavLink>
             </li>
             <li className="nav-item">
-            <NavLink to={"/skills"} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+            <NavLink to={"/skills"} onClick={() => setExpanded(false)} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
             Skills
             </NavLink>
             </li>

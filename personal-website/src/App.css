@@ -42,6 +42,7 @@
   height: 285px; 
   visibility: hidden; 
   pointer-events: none;
+  z-index: -1;
 }
 
 .vl {

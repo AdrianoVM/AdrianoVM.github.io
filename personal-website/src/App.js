@@ -1,9 +1,6 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-
-import { Nav, Button, Alert, Breadcrumb, Card } from 'react-bootstrap'
 
 import {motion} from 'framer-motion';
 import NavB from './components/nav';
@@ -21,19 +18,22 @@ import FootBar from './components/nav/footBar';
 import ScrollToTop from './components/nav/scrollToTop';
 
 function App() {
+  const [expandedNav, setExpanded] = useState(false);
   return (
 
     <Router>
     <ScrollToTop/>
     <div className="App">
 
-      <NavB></NavB>
+      <NavB expanded={expandedNav} setExpanded={setExpanded}></NavB>
+      <div onClick={() => setExpanded(false)}>
       <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/projects" element={<Projects />}/>
           <Route path="/skills" element={<Skills />}/>
       </Routes>
       <FootBar/>
+      </div>
     </div>
     </Router>
 
