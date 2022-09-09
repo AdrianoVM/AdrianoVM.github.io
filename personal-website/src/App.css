@@ -54,6 +54,7 @@
   height: 15vh;
   margin: auto;
   position: relative;
+  border-radius: calc(.25rem);
 }
 
 
@@ -70,7 +71,7 @@ main h2 {
 
 .card-flag {
   width: 100%;
-  border-radius: calc(.25rem - 1px);
+  border-radius: calc(.25rem);
 }
 
 img{
@@ -95,4 +96,9 @@ img{
 
 .grey-bg {
   background-color: rgb(231, 231, 231);
+}
+
+.star {
+  color: rgb(240, 191, 66);
+  margin: 0 2px;
 }

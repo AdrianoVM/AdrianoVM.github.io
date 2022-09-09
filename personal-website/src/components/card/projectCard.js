@@ -8,10 +8,10 @@ const ProjectCard = props => {
     <div className="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center grey-bg rounded">
         <div className="col-md-10 mx-auto my-5">
           <h1 className="display-4 fw-normal link-target" id={id} >{title}</h1>
-          <p className="lead">{subtitle}</p>
+          {subtitle}
           <p className="text-start">
              {props.children}
-            </p>
+          </p>
           <div>
             {media}
           </div>

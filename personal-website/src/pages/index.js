@@ -2,10 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import adri from '../images/adriano.png'
 import React from 'react';
 import Timeline from '../components/card/timeline';
-
+import { Link } from 'react-router-dom';
 import { faArrowAltCircleRight, faArrowLeftLong, faDiceD6, faFileAlt, faMedal, faStar, faTools, faUserGraduate  } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NavButton from '../components/nav/button';
+import { HashLink } from 'react-router-hash-link';
 
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
                 <p className="my-3 m-md-3">
                   My name is <b>Adriano Viegas Milani</b>,
                   and this is my website.
-                  It is separated in 3 parts: <br/> Overview (this page), <a href="projects.html">Projects</a>, and <a href="skills.html">Skills</a>. <br/>
+                  It is separated in 3 parts: <br/> Overview (this page), <Link to="projects">Projects</Link>, and <Link to="skills">Skills</Link>. <br/>
                   I’m currently in the 2nd year of the Master in Computer Science at EPFL in Switzerland.
                   In this page you can find my education, achievements, and interests below.
                   
@@ -48,7 +49,7 @@ const Home = () => {
           <h2 className="link-target" id="achievements"><FontAwesomeIcon icon={faMedal}/> Achievements</h2>
 
           <div className="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center bg-light">
-            <p className="lead"><FontAwesomeIcon icon={faStar}/> Best demo/poster award for <a href="projects.html#forest-savr">Forest SaVR</a> at the 2020 GI VR/AR Workshop in Trier, Germany. <FontAwesomeIcon icon={faStar}/></p>
+            <p className="lead"><FontAwesomeIcon icon={faStar}/> Best demo/poster award for <HashLink to="/projects#forest-savr">Forest SaVR</HashLink> at the 2020 GI VR/AR Workshop in Trier, Germany. <FontAwesomeIcon icon={faStar}/></p>
           </div>
           <div className="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center bg-light">
             <p className="lead"><FontAwesomeIcon icon={faStar}/> 3rd worldwide on the first round of logic challenge <a href="https://www.algorea.org/">Algoréa</a> in 2018 <FontAwesomeIcon icon={faStar}/></p>

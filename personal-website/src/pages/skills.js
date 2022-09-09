@@ -4,11 +4,12 @@ import frenchFlag from '../images/Flag_of_France.svg'
 import brazilianFlag from '../images/Flag_of_Brazil.svg'
 import italianFlag from '../images/Flag_of_Italy.svg'
 import { faGlobeAmericas, faToolbox } from '@fortawesome/free-solid-svg-icons';
-import { faPython } from '@fortawesome/free-brands-svg-icons';
+import { faPython, faUnity } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SkillCard from '../components/card/skillsCard';
 import { Row } from 'react-bootstrap';
 import {LayoutGroup, motion} from 'framer-motion';
+import { HashLink } from 'react-router-hash-link';
 
 const Skills = () => {
   const [skillOpen, setSkillOpen] = useState(new Array());
@@ -62,12 +63,12 @@ const Skills = () => {
 
         <Row className='justify-content-evenly align-items-center'>
         <SkillCard title={"Python"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-py"} width={windowSize.innerWidth}
-          icon={<MIcon icon={faPython}/>} style={{backgroundColor: '#306998'}}>
+          icon={<MIcon icon={faPython}/>} style={{backgroundColor: '#306998'}} stars={3}>
           Learned through many courses at the University of Luxembourg.
         </SkillCard>
-        <SkillCard title={"Python"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"lang-itss"} width={windowSize.innerWidth}
-          icon={<MIcon icon={faPython}/>} style={{backgroundColor: '#306998'}}>
-          Learned through many courses at the University of Luxembourg.
+        <SkillCard title={"Unity"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-unity"} width={windowSize.innerWidth}
+          icon={<MIcon icon={faUnity}/>} style={{backgroundColor: '#dddddd'}} stars={3}>
+          Learned through the <HashLink to="/projects#forest-savr">Forest SaVR</HashLink> and <HashLink to="/projects/#hunger-slayer">Hunger Slayer</HashLink> projects.
         </SkillCard>
         </Row>
         </LayoutGroup>

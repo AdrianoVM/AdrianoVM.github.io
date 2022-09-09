@@ -2,11 +2,14 @@ import {motion, AnimatePresence} from 'framer-motion';
 import classnames from 'classnames';
 import { ProgressBar } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
+import { faStar } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SkillCardClick = props => {
-    const {title, img, icon, style, percent, skillOpen, setSkillOpen, listId} = props;
+    const {title, img, icon, style, starObjects, skillOpen, setSkillOpen, listId} = props;
     const [isOpen, setIsOpen] = useState(false);
     
+    const isSkill = icon != null;
     useEffect(() => {
         const index = skillOpen.indexOf(listId);
         if (index == -1) {
@@ -38,24 +41,17 @@ const SkillCardClick = props => {
     <motion.div layout onClick={setOpen} className={classnames({"col-5 col-sm-5 col-md-4" : !isOpen}, {"col-6 col-md-5" : isOpen},"h-100 my-4")}
     transition={{ duration: 0.3, ease: "easeInOut" }}>
         <motion.div className="text-center h-100" whileHover={{ scale: [null, 1.04] }} transition={{ duration: 0.2 }}
-        style={{boxShadow: '0px 10px 20px rgba(0,0,0,0.5)',
+        style={{boxShadow: '5px 5px 8px rgba(0,0,0,0.5)',
         borderRadius: 'calc(.25rem - 1px)',
         cursor: 'pointer'}}>
         {img != null && img }
         {icon != null && 
         <motion.div layout className="card-img-top icon-card" style={style}>
-            <AnimatePresence>
-            {isOpen && <motion.div 
-            initial={{ opacity: 0 }}
-            exit={{ opacity: [0 , 1, 0], scale: [null, 2, 1] }}
-            animate={{
-                opacity: [null, 1, 0],
-                scale: [null, 2, 1],
-                rotate: [null, 180, 360, 0],
-                borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-                }}>test</motion.div>}
-                </AnimatePresence>
-            <motion.h1 className="card-title position-absolute top-50 start-50 translate-middle" >{icon}</motion.h1>
+        
+            <motion.h1 className="card-title position-absolute bottom-50 start-50 translate-middle-x" >{icon}</motion.h1>
+            {icon != null && 
+            <motion.div className='position-absolute top-50 start-50 translate-middle-x w-100'>{starObjects}</motion.div>
+            }
         </motion.div>
         }
         {(isOpen)&&
@@ -65,9 +61,7 @@ const SkillCardClick = props => {
         transition={{duration: 1}}
         className="card-body px-1">
         <h5 className="card-title">{title}</h5>
-        {icon != null && 
-        <ProgressBar striped variant="success" now={percent}/>
-        }
+        
         <motion.p className="card-text">{props.children} </motion.p>
         </motion.div>}
         </motion.div>
