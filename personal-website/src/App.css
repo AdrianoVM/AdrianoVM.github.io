@@ -68,6 +68,11 @@ main h2 {
   margin-bottom: 1rem;
 }
 
+.card-flag {
+  width: 100%;
+  border-radius: calc(.25rem - 1px);
+}
+
 img{
   max-width: 80em;
 }

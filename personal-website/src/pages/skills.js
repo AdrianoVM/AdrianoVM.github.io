@@ -4,6 +4,7 @@ import frenchFlag from '../images/Flag_of_France.svg'
 import brazilianFlag from '../images/Flag_of_Brazil.svg'
 import italianFlag from '../images/Flag_of_Italy.svg'
 import { faGlobeAmericas, faToolbox } from '@fortawesome/free-solid-svg-icons';
+import { faPython } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SkillCard from '../components/card/skillsCard';
 import { Row } from 'react-bootstrap';
@@ -13,7 +14,7 @@ const Skills = () => {
   const [skillOpen, setSkillOpen] = useState(new Array());
   //Window size to render the skillCards differently
   const [windowSize, setWindowSize] = useState(getWindowSize());
-
+  const MIcon = motion(FontAwesomeIcon)
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
@@ -37,27 +38,39 @@ const Skills = () => {
         <LayoutGroup>
         <Row className='justify-content-evenly align-items-center'>
           <SkillCard title={"English"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"lang-en"} width={windowSize.innerWidth}
-          img={<motion.img layout src={englishFlag} className="card-img-top" alt="Flag of the United Kingdom"/>}>
+          img={<motion.img layout src={englishFlag} className="card-flag" alt="Flag of the United Kingdom"/>}>
           <b>Proficiency: Bilingual</b> <br/> TOEFL iBT score of 110 (November 2020), Cambridge English level 3 C2 certificate (2018).
           </SkillCard>
           <SkillCard title={"French"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"lang-fr"} width={windowSize.innerWidth}
-          img={<motion.img layout src={frenchFlag} className="card-img-top" alt="Flag of France"/>}>
+          img={<motion.img layout src={frenchFlag} className="card-flag" alt="Flag of France"/>}>
           <b>Proficiency: Native</b> <br/> Studied in a French school, this is the language I have the most control over.
           </SkillCard>
           <div className="w-100 d-none d-sm-block d-lg-none"></div>
           <SkillCard title={"Portuguese"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"lang-br"} width={windowSize.innerWidth}
-          img={<motion.img layout src={brazilianFlag} className="card-img-top" alt="Flag of Brazil"/>}>
+          img={<motion.img layout src={brazilianFlag} className="card-flag" alt="Flag of Brazil"/>}>
           <b>Proficiency: Native</b> <br/> I am Brazilian.
           </SkillCard>
           <SkillCard title={"Italian"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"lang-it"} width={windowSize.innerWidth}
-          img={<motion.img layout src={italianFlag} className="card-img-top" alt="Flag of Italy"/>}>
+          img={<motion.img layout src={italianFlag} className="card-flag" alt="Flag of Italy"/>}>
           <b>Proficiency: Elementary</b> <br/> Learned for 3 years in school, also my second nationality.
           </SkillCard>
         </Row>
-      </LayoutGroup>
-        <h2 className="link-target" id="tools"> <FontAwesomeIcon icon={faToolbox}/> Technologies</h2>
       
-      
+        
+        
+        <motion.h2 layout="position" className="link-target" id="tools"> <FontAwesomeIcon icon={faToolbox}/> Technologies</motion.h2>
+
+        <Row className='justify-content-evenly align-items-center'>
+        <SkillCard title={"Python"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-py"} width={windowSize.innerWidth}
+          icon={<MIcon icon={faPython}/>} style={{backgroundColor: '#306998'}}>
+          Learned through many courses at the University of Luxembourg.
+        </SkillCard>
+        <SkillCard title={"Python"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"lang-itss"} width={windowSize.innerWidth}
+          icon={<MIcon icon={faPython}/>} style={{backgroundColor: '#306998'}}>
+          Learned through many courses at the University of Luxembourg.
+        </SkillCard>
+        </Row>
+        </LayoutGroup>
       </main>
       </div>
       </div>
