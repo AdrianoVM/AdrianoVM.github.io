@@ -24,7 +24,7 @@ const SkillCard = props => {
     });
 
 
-    if (width > 992) {
+    if (width > 992 && !isSkill) {
         return(
         <motion.div layout className={"col-5 col-sm-3 h-100 mb-3"} transition={{ duration: 0.5, type:"spring" }}>
         <motion.div className="card text-center h-100" whileHover={{ scale: [null, 1.04] }} transition={{ duration: 0.2 }}>

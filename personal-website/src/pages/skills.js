@@ -3,8 +3,9 @@ import englishFlag from '../images/Flag_of_the_United_Kingdom.svg'
 import frenchFlag from '../images/Flag_of_France.svg'
 import brazilianFlag from '../images/Flag_of_Brazil.svg'
 import italianFlag from '../images/Flag_of_Italy.svg'
+import latexLogo from '../images/LaTeX_logo.svg'
 import { faGlobeAmericas, faToolbox } from '@fortawesome/free-solid-svg-icons';
-import { faPython, faUnity } from '@fortawesome/free-brands-svg-icons';
+import { faPython, faUnity, faHtml5, faCss3Alt, faBootstrap, faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SkillCard from '../components/card/skillsCard';
 import { Row } from 'react-bootstrap';
@@ -61,7 +62,7 @@ const Skills = () => {
         
         <motion.h2 layout="position" className="link-target" id="tools"> <FontAwesomeIcon icon={faToolbox}/> Technologies</motion.h2>
 
-        <Row className='justify-content-evenly align-items-center'>
+        <Row className='justify-content-evenly justify-content-md-center align-items-center'>
         <SkillCard title={"Python"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-py"} width={windowSize.innerWidth}
           icon={<MIcon icon={faPython}/>} style={{backgroundColor: '#306998'}} stars={3}>
           Learned through many courses at the University of Luxembourg.
@@ -69,6 +70,28 @@ const Skills = () => {
         <SkillCard title={"Unity"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-unity"} width={windowSize.innerWidth}
           icon={<MIcon icon={faUnity}/>} style={{backgroundColor: '#dddddd'}} stars={3}>
           Learned through the <HashLink to="/projects#forest-savr">Forest SaVR</HashLink> and <HashLink to="/projects/#hunger-slayer">Hunger Slayer</HashLink> projects.
+        </SkillCard>
+        <SkillCard title={"C-Sharp"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-CSharp"} width={windowSize.innerWidth}
+          icon={"C#"} style={{backgroundColor: '#1E9E25'}} stars={3}>
+          Learned through Unity with the <HashLink to="/projects#forest-savr">Forest SaVR</HashLink> and <HashLink to="/projects/#hunger-slayer">Hunger Slayer</HashLink> projects.
+        </SkillCard>
+        <div className="w-100 d-none d-lg-block"></div>
+        <SkillCard title={"HTML & CSS"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-html"} width={windowSize.innerWidth}
+          icon={<motion.div><nobr><MIcon icon={faHtml5}/> & <MIcon icon={faCss3Alt}/></nobr></motion.div>} style={{backgroundColor: '#E44D26'}} stars={3}>
+          Learned through the <HashLink to="/projects#bsp1">Visual Representation of Legal Concepts</HashLink>, <HashLink to="/projects#proof-guide">Proof Guide</HashLink> projects, and when building this website.
+        </SkillCard>
+        <SkillCard title={"Bootstrap"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-boot"} width={windowSize.innerWidth}
+          icon={<MIcon icon={faBootstrap}/>} style={{backgroundColor: '#7255AF'}} stars={3}>
+          Learned mainly through the <HashLink to="/projects#proof-guide">Proof Guide</HashLink> project and when building this website.
+        </SkillCard>
+        <SkillCard title={"React"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-react"} width={windowSize.innerWidth}
+          icon={<MIcon icon={faReact}/>} style={{backgroundColor: '#61dafb'}} stars={2}>
+          Learned when rebuilding this website.
+        </SkillCard>
+        <div className="w-100 d-none d-lg-block"></div>
+        <SkillCard title={"LaTeX"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-latex"} width={windowSize.innerWidth}
+          icon={<motion.img layout src={latexLogo} className="img-fluid col-9" alt="Logo of Latex"/>} style={{backgroundColor: '#407D7F'}} stars={2}>
+          Learned through all bachelor semester projects, when writing the reports, and many other courses.
         </SkillCard>
         </Row>
         </LayoutGroup>

@@ -38,7 +38,7 @@ const SkillCardClick = props => {
     }
     return(
 
-    <motion.div layout onClick={setOpen} className={classnames({"col-5 col-sm-5 col-md-4" : !isOpen}, {"col-6 col-md-5" : isOpen},"h-100 my-4")}
+    <motion.div layout onClick={setOpen} className={classnames({"col-5 col-sm-5 col-md-4 col-lg-3" : !isOpen}, {"col-6 col-md-5 col-lg-4" : isOpen},"h-100 my-4")}
     transition={{ duration: 0.3, ease: "easeInOut" }}>
         <motion.div className="text-center h-100" whileHover={{ scale: [null, 1.04] }} transition={{ duration: 0.2 }}
         style={{boxShadow: '5px 5px 8px rgba(0,0,0,0.5)',
