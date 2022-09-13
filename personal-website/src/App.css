@@ -57,6 +57,13 @@
   border-radius: calc(.25rem);
 }
 
+.bottom-25 {
+  bottom: 20%!important;
+}
+.bottom-40 {
+  bottom: 45%!important;
+}
+
 
 main h2 {
   margin-top: 4rem;

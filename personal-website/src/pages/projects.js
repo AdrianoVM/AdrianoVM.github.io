@@ -1,6 +1,5 @@
 import React from 'react';
-import proofGuideImg from '../images/proof-guide.png';
-import bsp1 from '../images/bsp1.png'
+import { proofGuideImg, bsp1 } from '../images';
 import ProjectCard from '../components/card/projectCard';
 import { Button } from 'react-bootstrap';
 import {motion} from 'framer-motion';

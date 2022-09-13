@@ -1,16 +1,13 @@
 import React, {useState, useEffect} from 'react';
-import englishFlag from '../images/Flag_of_the_United_Kingdom.svg'
-import frenchFlag from '../images/Flag_of_France.svg'
-import brazilianFlag from '../images/Flag_of_Brazil.svg'
-import italianFlag from '../images/Flag_of_Italy.svg'
-import latexLogo from '../images/LaTeX_logo.svg'
+import { englishFlag, frenchFlag, brazilianFlag, italianFlag, latexLogo, pytorchLogo, tensorflowLogo, davinciLogo } from '../images';
 import { faGlobeAmericas, faToolbox } from '@fortawesome/free-solid-svg-icons';
-import { faPython, faUnity, faHtml5, faCss3Alt, faBootstrap, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faPython, faUnity, faHtml5, faCss3Alt, faBootstrap, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SkillCard from '../components/card/skillsCard';
 import { Row } from 'react-bootstrap';
 import {LayoutGroup, motion} from 'framer-motion';
 import { HashLink } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 
 const Skills = () => {
   const [skillOpen, setSkillOpen] = useState(new Array());
@@ -65,7 +62,8 @@ const Skills = () => {
         <Row className='justify-content-evenly justify-content-md-center align-items-center'>
         <SkillCard title={"Python"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-py"} width={windowSize.innerWidth}
           icon={<MIcon icon={faPython}/>} style={{backgroundColor: '#306998'}} stars={3}>
-          Learned through many courses at the University of Luxembourg.
+          Learned through many courses at the <HashLink to="/#University of Luxembourg">University of Luxembourg</HashLink> and <HashLink to="/#EPFL">EPFL</HashLink>, 
+          mostly with Machine learning and computer vision tasks.
         </SkillCard>
         <SkillCard title={"Unity"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-unity"} width={windowSize.innerWidth}
           icon={<MIcon icon={faUnity}/>} style={{backgroundColor: '#dddddd'}} stars={3}>
@@ -86,12 +84,35 @@ const Skills = () => {
         </SkillCard>
         <SkillCard title={"React"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-react"} width={windowSize.innerWidth}
           icon={<MIcon icon={faReact}/>} style={{backgroundColor: '#61dafb'}} stars={2}>
-          Learned when rebuilding this website.
+          Learned when rebuilding this website in summer 2022.
         </SkillCard>
+        
         <div className="w-100 d-none d-lg-block"></div>
+        <SkillCard title={"Vue"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-vue"} width={windowSize.innerWidth}
+          icon={<MIcon icon={faVuejs}/>} style={{backgroundColor: '#41B883'}} stars={1}>
+          Learned through the <HashLink to="/projects#bsp1">Visual Representation of Legal Concepts</HashLink>,
+          and <HashLink to="/projects#proof-guide">Proof Guide</HashLink> projects.
+        </SkillCard>
+        
+        <SkillCard title={"Pytorch"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-vue"} width={windowSize.innerWidth}
+          icon={<motion.img layout src={pytorchLogo} className="img-fluid col-9" alt="Logo of PyTorch"/>} style={{backgroundColor: '#EEF0F3'}} stars={2}>
+          Learned in the Deep Learning and image processing courses at <HashLink to="/#EPFL">EPFL</HashLink>.
+        </SkillCard>
+
+        <SkillCard title={"Tensorflow"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-tensorflow"} width={windowSize.innerWidth}
+          icon={<motion.img layout src={tensorflowLogo} className="img-fluid col-12" alt="Logo of Tensorflow"/>} style={{backgroundColor: '#FF6F00'}} stars={2}>
+          Learned in the Machine Learning course at <HashLink to="/#EPFL">EPFL</HashLink>.
+        </SkillCard>
+
+        <div className="w-100 d-none d-lg-block"></div>
+        
         <SkillCard title={"LaTeX"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-latex"} width={windowSize.innerWidth}
           icon={<motion.img layout src={latexLogo} className="img-fluid col-9" alt="Logo of Latex"/>} style={{backgroundColor: '#407D7F'}} stars={2}>
           Learned through all bachelor semester projects, when writing the reports, and many other courses.
+        </SkillCard>
+        <SkillCard title={"Davinci Resolve"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-resolve"} width={windowSize.innerWidth}
+          icon={<motion.img layout src={davinciLogo} className="img-fluid col-4" alt="Logo of DaVinci Resolve"/>} style={{backgroundColor: '#E7873B'}} stars={2}>
+          Editing software learned to create videos of the many projects shocased in the <NavLink to="/projects"> Projects</NavLink> page.
         </SkillCard>
         </Row>
         </LayoutGroup>

@@ -48,10 +48,10 @@ const SkillCardClick = props => {
         {icon != null && 
         <motion.div layout className="card-img-top icon-card" style={style}>
         
-            <motion.h1 className="card-title position-absolute bottom-50 start-50 translate-middle-x" >{icon}</motion.h1>
-            {icon != null && 
-            <motion.div className='position-absolute top-50 start-50 translate-middle-x w-100'>{starObjects}</motion.div>
-            }
+            <motion.h1 className="card-title position-absolute bottom-40 start-50 translate-middle-x col-9 col-sm-6 col-md-6" >{icon}</motion.h1>
+            
+            <motion.div className='position-absolute bottom-25 start-50 translate-middle-x w-100'>{starObjects}</motion.div>
+            
         </motion.div>
         }
         {(isOpen)&&

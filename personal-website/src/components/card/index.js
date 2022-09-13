@@ -6,7 +6,7 @@ const Card = props => {
     const {title, date, color, percent} = props;
     return(
 
-    <motion.div className="card text-center h-100" 
+    <motion.div className="card text-center h-100" id={title} 
     whileHover={{ scale: [null, 1.04] }} transition={{ duration: 0.2 }}>
         <div className={classnames('card-img-top icon-card', color)} >
         <h1 className="card-title position-absolute top-50 start-50 translate-middle text-white pb-2" >{title}</h1>

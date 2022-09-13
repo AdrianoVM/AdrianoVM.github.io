@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import adri from '../images/adriano.png'
+import { adri } from '../images';
 import React from 'react';
 import Timeline from '../components/card/timeline';
 import { Link } from 'react-router-dom';
