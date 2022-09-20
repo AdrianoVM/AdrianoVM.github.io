@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.10f40eee.css",
-    "main.js": "/static/js/main.c05b433b.js",
+    "main.css": "/static/css/main.12b86ada.css",
+    "main.js": "/static/js/main.671e8aff.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/adriano.png": "/static/media/adriano.18e41da8722278dfbf9f.png",
     "static/media/bsp1.png": "/static/media/bsp1.5624d8a13a61d58b04de.png",
@@ -15,12 +15,12 @@
     "static/media/Flag_of_the_United_Kingdom.svg": "/static/media/Flag_of_the_United_Kingdom.fd46970f89e3fbca473f57e811916ea0.svg",
     "static/media/Flag_of_France.svg": "/static/media/Flag_of_France.37a6930985491edc711eb82e4a327fcf.svg",
     "static/media/Flag_of_Italy.svg": "/static/media/Flag_of_Italy.c1dbbc414c71d2e5b4cca87f8c6df9f0.svg",
-    "main.10f40eee.css.map": "/static/css/main.10f40eee.css.map",
-    "main.c05b433b.js.map": "/static/js/main.c05b433b.js.map",
+    "main.12b86ada.css.map": "/static/css/main.12b86ada.css.map",
+    "main.671e8aff.js.map": "/static/js/main.671e8aff.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10f40eee.css",
-    "static/js/main.c05b433b.js"
+    "static/css/main.12b86ada.css",
+    "static/js/main.671e8aff.js"
   ]
 }
