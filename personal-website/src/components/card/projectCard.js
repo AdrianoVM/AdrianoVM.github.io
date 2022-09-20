@@ -1,5 +1,3 @@
-import {motion} from 'framer-motion';
-import classnames from 'classnames';
 
 const ProjectCard = props => {
     const {title, id, subtitle, media, extra} = props;

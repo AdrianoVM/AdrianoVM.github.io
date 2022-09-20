@@ -1,5 +1,4 @@
-import {motion} from 'framer-motion';
-import { ProgressBar } from 'react-bootstrap';
+
 import Card from '.';
 
 const Timeline = ({text, linkTo}) => {

@@ -1,6 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { useState } from 'react';
-import {motion} from 'framer-motion';
 import { NavLink } from "react-router-dom";
 import { Nav, Navbar, Container } from 'react-bootstrap'
 

@@ -3,10 +3,11 @@ import { adri } from '../images';
 import React from 'react';
 import Timeline from '../components/card/timeline';
 import { Link } from 'react-router-dom';
-import { faArrowAltCircleRight, faArrowLeftLong, faDiceD6, faFileAlt, faMedal, faStar, faTools, faUserGraduate  } from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight, faArrowLeftLong, faDiceD6, faFileAlt, faMedal, faStar, faTools, faUserGraduate} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NavButton from '../components/nav/button';
 import { HashLink } from 'react-router-hash-link';
+import Interests from '../components/interests';
 
 
 const Home = () => {
@@ -70,8 +71,8 @@ const Home = () => {
 
           <h2 className="link-target" id="interests"><FontAwesomeIcon icon={faDiceD6}/> Interests</h2>
           <p className="my-3 m-md-3"><FontAwesomeIcon icon={faTools}/> This part is not complete yet. <FontAwesomeIcon icon={faTools}/></p>
-          My interests include Virtual reality, AI, Machine learning, Computer vision, Video Games and Serious games.
-          
+
+          <Interests></Interests>
 
         </main>
       </div>

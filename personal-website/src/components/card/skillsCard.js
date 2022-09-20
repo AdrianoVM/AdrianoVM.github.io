@@ -1,6 +1,4 @@
 import {motion, AnimatePresence} from 'framer-motion';
-import classnames from 'classnames';
-import { ProgressBar } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import SkillCardClick from './skillsCardClick';
 
