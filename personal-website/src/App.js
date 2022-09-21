@@ -6,7 +6,7 @@ import {motion} from 'framer-motion';
 import NavB from './components/nav';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Link
