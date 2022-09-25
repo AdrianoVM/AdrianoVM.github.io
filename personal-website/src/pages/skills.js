@@ -30,7 +30,7 @@ const Skills = () => {
         <h1 className="display-1 hello pb-5" id="intro">Skills</h1>
         <p className="my-3 m-md-3">
         Here is an unordered list of my skills, it is separated in two parts: <br/>
-            <a href="#languages"><b>Languages</b></a> and <a href="#tools"><b>Technologies</b></a>,
+            <HashLink to="#languages"><b>Languages</b></HashLink> and <HashLink to="#tools"><b>Technologies</b></HashLink>,
             which include programming languages, front-end tools, and any other tool which might be of interest.
         </p>
         <h2 className="link-target" id="languages"><FontAwesomeIcon icon={faGlobeAmericas}/> Languages</h2>
