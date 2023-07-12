@@ -34,7 +34,7 @@ const Projects = () => {
 
           <ProjectCard title={<div>Forest SaVR 0.1 <FontAwesomeIcon icon={faVrCardboard}/> </div>} 
           subtitle={<p className="lead">Forest SaVR is a Virtual-Reality application to raise awareness of deforestation&nbsp;<FontAwesomeIcon icon={faTree}/>.</p>}
-          id={"forest-savr"} media={<div  className="ratio ratio-16x9 my-3"><iframe src="https://www.youtube.com/embed/E93NYJ476wk" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>}>
+          id={"forest-savr"} media={<div  className="ratio ratio-16x9 my-3"><iframe src="https://www.youtube.com/embed/E93NYJ476wk" title="Uni.lu Project Forest SaVR" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>}>
             Forest SaVR 0.1 is developed as the first part of a multi-semester project for the Bachelor in Computer Science of the University of Luxembourg.
             This project is made as part of the <a href="https://vrarlab.uni.lu/">VR/AR LAB</a> with Jean Botev and is developed with <a href="https://unity.com/">Unity <FontAwesomeIcon icon={faUnity}/></a>.
             Forest SaVR received the <b>best demo/poster award</b> at the 2020 GI VR/AR Workshop in Trier, Germany.

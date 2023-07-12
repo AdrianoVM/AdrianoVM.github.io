@@ -20,16 +20,16 @@ const Home = () => {
           <h1 className="display-1 hello pb-5 link-target" id="intro">Hello there, <br/> Welcome to my website! </h1>
           <div className="container-fluid">
             <div className="row align-items-center">
-              <div className="col-5 col-md-2">
-                <img src={adri} alt="Picture of Adriano Viegas Milani" className="img-fluid float-start"/>
+              <div className="col-6 col-md-3">
+                <img src={adri} alt="Portrait of Adriano Viegas Milani" className="img-fluid float-start rounded"/>
               </div>
-              <div className="col-5 col-md-2"><FontAwesomeIcon icon={faArrowLeftLong}/> This is me.</div>
-              <div className="col-12 col-md-8 text-start">
+              <div className="col-6 col-md-2"><FontAwesomeIcon icon={faArrowLeftLong}/> This is me.</div>
+              <div className="col-12 col-md-7 text-start">
                 <p className="my-3 m-md-3">
                   My name is <b>Adriano Viegas Milani</b>,
                   and this is my website.
                   It is separated in 3 parts: <br/> Overview (this page), <Link to="projects">Projects</Link>, and <Link to="skills">Skills</Link>. <br/>
-                  I’m currently in the 2nd year of the Master in Computer Science at EPFL in Switzerland.
+                  I’m currently doing my Master thesis at Logitech, as part of the Master in Computer Science at EPFL in Switzerland.
                   In this page you can find my education, achievements, and interests below.
                   
                 </p>

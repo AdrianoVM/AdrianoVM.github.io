@@ -10,7 +10,7 @@ import { HashLink } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 
 const Skills = () => {
-  const [skillOpen, setSkillOpen] = useState(new Array());
+  const [skillOpen, setSkillOpen] = useState([]);
   //Window size to render the skillCards differently
   const [windowSize, setWindowSize] = useState(getWindowSize());
   const MIcon = motion(FontAwesomeIcon)

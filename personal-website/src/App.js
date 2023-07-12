@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 
-import {motion} from 'framer-motion';
 import NavB from './components/nav';
 
 import {
   HashRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from './pages';
 import Projects from './pages/projects';

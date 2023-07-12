@@ -1,5 +1,5 @@
-import {motion, AnimatePresence} from 'framer-motion';
-import { useState, useEffect } from 'react';
+import {motion} from 'framer-motion';
+import { useEffect } from 'react';
 import SkillCardClick from './skillsCardClick';
 
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +15,7 @@ const SkillCard = props => {
 
     useEffect(() => {
         const index = skillOpen.indexOf(listId);
-        if (index == -1) {
+        if (index === -1) {
             
         }
     

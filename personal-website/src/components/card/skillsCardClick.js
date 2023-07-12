@@ -1,4 +1,4 @@
-import {motion, AnimatePresence} from 'framer-motion';
+import { motion } from 'framer-motion';
 import classnames from 'classnames';
 import { useState, useEffect } from 'react';
 
@@ -6,10 +6,10 @@ const SkillCardClick = props => {
     const {title, img, icon, style, starObjects, skillOpen, setSkillOpen, listId} = props;
     const [isOpen, setIsOpen] = useState(false);
     
-    const isSkill = icon != null;
+    //const isSkill = icon != null;
     useEffect(() => {
         const index = skillOpen.indexOf(listId);
-        if (index == -1) {
+        if (index === -1) {
             setIsOpen(false);
         }
     

@@ -10,8 +10,8 @@ const Timeline = ({text, linkTo}) => {
             <div className="d-none d-md-block col-md-5 order-md-1"></div>
             <div className="col-11 col-md-5 order-2 order-md-3">
               <div className="mb-4">
-                <Card title={"EPFL"} date={"2021-2023"} color={"epfl"} percent={50}>
-                 Master in Computer Science. Specialization in Signals Images and Interfaces
+                <Card title={"EPFL"} date={"2021-2023"} color={"epfl"} percent={80}>
+                 Master in Computer Science. Specialization in Signals Images and Interfaces.
                 </Card>
               </div>
             </div>

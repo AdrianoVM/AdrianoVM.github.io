@@ -8,7 +8,8 @@ import tensorflowLogo from './TF_White_Primary_Horizontal.svg';
 import davinciLogo from './DaVinci_Resolve_12_logo.png';
 import bsp1 from './bsp1.png';
 import proofGuideImg from './proof-guide.png'
-import adri from './adriano.png';
+// import adri from './adriano.png';
+import adri from './adrianoMalmo.jpg';
 
 
 export {
