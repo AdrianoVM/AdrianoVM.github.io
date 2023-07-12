@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css';
 
 import NavB from './components/nav';
+
 
 import {
   HashRouter as Router,
@@ -14,6 +14,7 @@ import Projects from './pages/projects';
 import Skills from './pages/skills';
 import FootBar from './components/nav/footBar';
 import ScrollToTop from './components/nav/scrollToTop';
+import './App.css';
 
 function App() {
   const [expandedNav, setExpanded] = useState(false);

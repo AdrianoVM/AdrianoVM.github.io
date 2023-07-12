@@ -20,7 +20,7 @@ const NavB = (props) => {
         </button> */}
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <ul className="navbar-nav me-auto mb-2 mb-sm-0">
+          <ul className="navbar-nav me-auto mb-2 mb-sm-0 nav-underline">
             <li className="nav-item">
             <NavLink  to={"/"} onClick={() => setExpanded(false)} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
             Home
