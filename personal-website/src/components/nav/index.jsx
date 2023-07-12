@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { NavLink } from "react-router-dom";
-import { Nav, Navbar, Container } from 'react-bootstrap'
+import { Nav, Navbar, Container, Button } from 'react-bootstrap';
+import ThemeToggle from './themeToggle';
 
 const NavB = (props) => {
   const {expanded, setExpanded} = props;
@@ -37,13 +38,17 @@ const NavB = (props) => {
             </NavLink>
             </li>
           </ul>
+          
           </Nav>
+          <ul className="navbar-nav flex-row flex-wrap ms-md-auto">
+          <li className='Nav-item align-items-center'>
+            <ThemeToggle></ThemeToggle>
+            </li>
+          </ul>
         </Navbar.Collapse>
       </Container>
     </Navbar>
     )
 };
-
-
 
 export default NavB;

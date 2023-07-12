@@ -4,7 +4,7 @@ import React from 'react';
 import Timeline from '../components/card/timeline';
 import { Link } from 'react-router-dom';
 import { faArrowAltCircleRight, faArrowLeftLong, faDiceD6, faFileAlt, faMedal, faStar, faTools, faUserGraduate} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NavButton from '../components/nav/button';
 import { HashLink } from 'react-router-hash-link';
 import Interests from '../components/interests';
