@@ -8,7 +8,7 @@ const NavB = (props) => {
   // const [expanded, setExpanded] = useState(false);
 
     return(
-    <Navbar expanded={expanded} sticky="top" expand="sm" bg="dark" variant="dark">
+    <Navbar expanded={expanded} sticky="top" expand="sm" variant="dark" className='navbar-bg-dark'>
       <Container fluid>
         <NavLink to={"/"} onClick={() => setExpanded(false)} className="navbar-brand">
         AVM

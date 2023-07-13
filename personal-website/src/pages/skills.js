@@ -67,11 +67,13 @@ const Skills = () => {
         </SkillCard>
         <SkillCard title={"Unity"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-unity"} width={windowSize.innerWidth}
           icon={<MIcon icon={faUnity}/>} style={{backgroundColor: '#dddddd'}} stars={3}>
-          Learned through the <HashLink to="/projects#forest-savr">Forest SaVR</HashLink> and <HashLink to="/projects/#hunger-slayer">Hunger Slayer</HashLink> projects.
+          Learned through Unity with the <HashLink to="/projects#forest-savr">Forest SaVR</HashLink>, <HashLink to="/projects#csaf"> CSAF </HashLink>, and <HashLink to="/projects#hunger-slayer">Hunger Slayer</HashLink> projects.
+          Also from being an assistant in the VR course at EPFL. 
         </SkillCard>
         <SkillCard title={"C-Sharp"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-CSharp"} width={windowSize.innerWidth}
           icon={"C#"} style={{backgroundColor: '#1E9E25'}} stars={3}>
-          Learned through Unity with the <HashLink to="/projects#forest-savr">Forest SaVR</HashLink> and <HashLink to="/projects/#hunger-slayer">Hunger Slayer</HashLink> projects.
+          Learned through Unity with the <HashLink to="/projects#forest-savr">Forest SaVR</HashLink>, <HashLink to="/projects#csaf"> CSAF </HashLink>, and <HashLink to="/projects#hunger-slayer">Hunger Slayer</HashLink> projects.
+          
         </SkillCard>
 
         <div className="w-100 d-none d-md-block"></div>
@@ -108,7 +110,13 @@ const Skills = () => {
         </SkillCard>
 
         <div className="w-100 d-none d-md-block"></div>
-        
+
+        <SkillCard title={"C++"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-C++"} width={windowSize.innerWidth}
+          icon={"C++"} style={{backgroundColor: '#5E97D0'}} stars={2}>
+          Learned through the <HashLink to="/projects#acg">ray tracing</HashLink> project which is entirely written in c++.
+          
+        </SkillCard>
+
         <SkillCard title={"LaTeX"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-latex"} width={windowSize.innerWidth}
           icon={<motion.img layout src={latexLogo} className="img-fluid col-9" alt="Logo of Latex"/>} style={{backgroundColor: '#407D7F'}} stars={2}>
           Learned through all bachelor semester projects, when writing the reports, and many other courses.

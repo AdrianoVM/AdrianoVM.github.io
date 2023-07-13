@@ -26,7 +26,23 @@ const Projects = () => {
 
           <ProjectCard title={<div>Hunger Slayer: Grand Banquet <FontAwesomeIcon icon={faVrCardboard}/></div>}
           subtitle={<p className="lead">A virtual-reality cooking game &nbsp;<FontAwesomeIcon icon={faUtensils}/>.</p>}
-          key={"hunger-slayer"} media={<div  className="ratio ratio-16x9 my-3"><iframe src="https://www.youtube.com/embed/3EUrt8cDPWE" title="EPFL VR Project - Hunger Slayer: Grand Banquet" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>}>
+          id={"csaf"} media={<div  className="ratio ratio-16x9 my-3"><iframe src="https://www.youtube.com/embed/3EUrt8cDPWE" title="EPFL VR Project - Hunger Slayer: Grand Banquet" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>}>
+          Hunger Slayer: Grand Banquet was developed as the main deliverable of the Virtual Reality course in the Computer Science Master at EPFL.
+          The objective with this project was to implement various interaction techniques of VR applications in a fun environment.
+          The game was created with the assistance of Paul Oliver and Noé De Santo and was selected as a honorable mention for best game of the year.
+          </ProjectCard>
+
+          <ProjectCard title={<div>Ray Tracing: A Nori Extension <FontAwesomeIcon icon={faVrCardboard}/></div>}
+          subtitle={<p className="lead">A virtual-reality cooking game &nbsp;<FontAwesomeIcon icon={faUtensils}/>.</p>}
+          id={"acg"} media={<div  className="ratio ratio-16x9 my-3"><iframe src="https://www.youtube.com/embed/3EUrt8cDPWE" title="EPFL VR Project - Hunger Slayer: Grand Banquet" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>}>
+          Hunger Slayer: Grand Banquet was developed as the main deliverable of the Virtual Reality course in the Computer Science Master at EPFL.
+          The objective with this project was to implement various interaction techniques of VR applications in a fun environment.
+          The game was created with the assistance of Paul Oliver and Noé De Santo and was selected as a honorable mention for best game of the year.
+          </ProjectCard>
+
+          <ProjectCard title={<div>Hunger Slayer: Grand Banquet <FontAwesomeIcon icon={faVrCardboard}/></div>}
+          subtitle={<p className="lead">A virtual-reality cooking game &nbsp;<FontAwesomeIcon icon={faUtensils}/>.</p>}
+          id={"hunger-slayer"} media={<div  className="ratio ratio-16x9 my-3"><iframe src="https://www.youtube.com/embed/3EUrt8cDPWE" title="EPFL VR Project - Hunger Slayer: Grand Banquet" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>}>
           Hunger Slayer: Grand Banquet was developed as the main deliverable of the Virtual Reality course in the Computer Science Master at EPFL.
           The objective with this project was to implement various interaction techniques of VR applications in a fun environment.
           The game was created with the assistance of Paul Oliver and Noé De Santo and was selected as a honorable mention for best game of the year.

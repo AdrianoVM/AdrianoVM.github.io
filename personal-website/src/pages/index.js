@@ -49,10 +49,10 @@ const Home = () => {
 
           <h2 className="link-target" id="achievements"><FontAwesomeIcon icon={faMedal}/> Achievements</h2>
 
-          <div className="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center bg-light">
+          <div className="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center grey-bg">
             <p className="lead"><FontAwesomeIcon icon={faStar}/> Best demo/poster award for <HashLink to="/projects#forest-savr">Forest SaVR</HashLink> at the 2020 GI VR/AR Workshop in Trier, Germany. <FontAwesomeIcon icon={faStar}/></p>
           </div>
-          <div className="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center bg-light">
+          <div className="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center grey-bg">
             <p className="lead"><FontAwesomeIcon icon={faStar}/> 3rd worldwide on the first round of logic challenge <a href="https://www.algorea.org/">Algoréa</a> in 2018 <FontAwesomeIcon icon={faStar}/></p>
           </div>
 
