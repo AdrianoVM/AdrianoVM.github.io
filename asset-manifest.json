@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.12b86ada.css",
-    "main.js": "/static/js/main.be514a39.js",
+    "main.css": "/static/css/main.a41628d8.css",
+    "main.js": "/static/js/main.5835a42b.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
-    "static/media/adriano.png": "/static/media/adriano.18e41da8722278dfbf9f.png",
+    "static/media/final.png": "/static/media/final.68c15cce538cf4e581d1.png",
     "static/media/bsp1.png": "/static/media/bsp1.5624d8a13a61d58b04de.png",
+    "static/media/adrianoMalmo.jpg": "/static/media/adrianoMalmo.3634a28f9a072d9a251f.jpg",
     "static/media/proof-guide.png": "/static/media/proof-guide.eebfb1521a8d70224560.png",
     "static/media/DaVinci_Resolve_12_logo.png": "/static/media/DaVinci_Resolve_12_logo.1439534a0eb4f4c65cce.png",
-    "static/media/Flag_of_Brazil.svg": "/static/media/Flag_of_Brazil.dcc02bb75f2a1e9e15e0f873c90372e4.svg",
-    "static/media/LaTeX_logo.svg": "/static/media/LaTeX_logo.0e26a673717ab687e1c73dd7fe411a9f.svg",
+    "static/media/Flag_of_Brazil.svg": "/static/media/Flag_of_Brazil.62e1c5da3916cece2a3fd3d78f4fcd53.svg",
+    "static/media/LaTeX_logo.svg": "/static/media/LaTeX_logo.8b35e1dd6a20f5d9d20790577cea8a49.svg",
     "static/media/TF_White_Primary_Horizontal.svg": "/static/media/TF_White_Primary_Horizontal.dd0137e7a381e29e3029a85b4242b1f5.svg",
-    "static/media/PyTorch_logo_black.svg": "/static/media/PyTorch_logo_black.afdea86e3f40a16754d957216f9e57f1.svg",
+    "static/media/PyTorch_logo_black.svg": "/static/media/PyTorch_logo_black.16f70172f1067a30107cbc9a09dc119c.svg",
     "index.html": "/index.html",
-    "static/media/Flag_of_the_United_Kingdom.svg": "/static/media/Flag_of_the_United_Kingdom.8c3d2102446be2711b46b83bef6cc68e.svg",
-    "static/media/Flag_of_France.svg": "/static/media/Flag_of_France.6455f145c65bfa6c2980cc1e9ab6afde.svg",
-    "static/media/Flag_of_Italy.svg": "/static/media/Flag_of_Italy.bb2033dcda58d584b313a60a850a36cb.svg",
-    "main.12b86ada.css.map": "/static/css/main.12b86ada.css.map",
-    "main.be514a39.js.map": "/static/js/main.be514a39.js.map",
+    "static/media/Flag_of_the_United_Kingdom.svg": "/static/media/Flag_of_the_United_Kingdom.fd46970f89e3fbca473f57e811916ea0.svg",
+    "static/media/Flag_of_France.svg": "/static/media/Flag_of_France.37a6930985491edc711eb82e4a327fcf.svg",
+    "static/media/Flag_of_Italy.svg": "/static/media/Flag_of_Italy.c1dbbc414c71d2e5b4cca87f8c6df9f0.svg",
+    "main.a41628d8.css.map": "/static/css/main.a41628d8.css.map",
+    "main.5835a42b.js.map": "/static/js/main.5835a42b.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12b86ada.css",
-    "static/js/main.be514a39.js"
+    "static/css/main.a41628d8.css",
+    "static/js/main.5835a42b.js"
   ]
 }
