@@ -10,6 +10,7 @@ import bsp1 from './bsp1.png';
 import proofGuideImg from './proof-guide.png'
 // import adri from './adriano.png';
 import adri from './adrianoMalmo.jpg';
+import acg from './final.png';
 
 
 export {
@@ -23,5 +24,6 @@ export {
     davinciLogo,
     bsp1,
     proofGuideImg,
-    adri
+    adri,
+    acg
 };

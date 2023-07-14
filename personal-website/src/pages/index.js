@@ -3,11 +3,12 @@ import { adri } from '../images';
 import React from 'react';
 import Timeline from '../components/card/timeline';
 import { Link } from 'react-router-dom';
-import { faArrowAltCircleRight, faArrowLeftLong, faDiceD6, faFileAlt, faMedal, faStar, faTools, faUserGraduate} from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight, faArrowLeftLong, faDiceD6, faFileAlt, faMedal, faStar, faUserGraduate, faNewspaper} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NavButton from '../components/nav/button';
 import { HashLink } from 'react-router-hash-link';
 import Interests from '../components/interests';
+import Publications from '../components/publications/publications';
 
 
 const Home = () => {
@@ -45,14 +46,15 @@ const Home = () => {
 
           <Timeline></Timeline>
 
-          
+          <h2 className='link-target' id="publications"><FontAwesomeIcon icon={faNewspaper}/> Publications</h2>
+          <Publications></Publications>
 
           <h2 className="link-target" id="achievements"><FontAwesomeIcon icon={faMedal}/> Achievements</h2>
 
-          <div className="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center grey-bg">
+          <div className="position-relative overflow-hidden p-3 p-md-4 my-3 m-md-3 text-center grey-bg">
             <p className="lead"><FontAwesomeIcon icon={faStar}/> Best demo/poster award for <HashLink to="/projects#forest-savr">Forest SaVR</HashLink> at the 2020 GI VR/AR Workshop in Trier, Germany. <FontAwesomeIcon icon={faStar}/></p>
           </div>
-          <div className="position-relative overflow-hidden p-3 p-md-5 my-3 m-md-3 text-center grey-bg">
+          <div className="position-relative overflow-hidden p-3 p-md-4 my-3 m-md-3 text-center grey-bg">
             <p className="lead"><FontAwesomeIcon icon={faStar}/> 3rd worldwide on the first round of logic challenge <a href="https://www.algorea.org/">Algoréa</a> in 2018 <FontAwesomeIcon icon={faStar}/></p>
           </div>
 
@@ -70,7 +72,7 @@ const Home = () => {
 
 
           <h2 className="link-target" id="interests"><FontAwesomeIcon icon={faDiceD6}/> Interests</h2>
-          <p className="my-3 m-md-3"><FontAwesomeIcon icon={faTools}/> This part is not complete yet. <FontAwesomeIcon icon={faTools}/></p>
+          {/* <p className="my-3 m-md-3"><FontAwesomeIcon icon={faTools}/> This part is not complete yet. <FontAwesomeIcon icon={faTools}/></p> */}
 
           <Interests></Interests>
 

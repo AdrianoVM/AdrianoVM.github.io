@@ -155,6 +155,14 @@ img{
   margin: 0 2px;
 }
 
+.accordion-header {
+  margin-top: 0;
+}
+
+.accordion-body {
+  text-align: left;
+}
+
 .card-title {
   color: rgb(33, 37, 41);
   color: var(--bs-dark);

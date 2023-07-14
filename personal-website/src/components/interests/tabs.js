@@ -1,10 +1,10 @@
-import { faVrCardboard, faGamepad, faMobile, faCircleNodes } from '@fortawesome/free-solid-svg-icons';
+import { faVrCardboard, faGamepad, faMobile, faDrawPolygon } from '@fortawesome/free-solid-svg-icons';
 
   
   export const allIngredients = [
     { icon: faVrCardboard, label: "Virtual Reality & Augmented Reality", color: "#70d6ff" },
     { icon: faGamepad, label: "Video Games & Serious Games", color: "#ff70a6" },
-    { icon: faCircleNodes, label: "Machine Learning & Computer Vision", color: "#ff9770" },
+    { icon: faDrawPolygon, label: "Computer Graphics & Vision", color: "#ff9770" },
     { icon: faMobile, label: "Technologies & Science", color: "#ffd670" },
     { icon: "🥂", label: "Champers?", color: "#lightblue" }
   ];
