@@ -163,7 +163,7 @@ img{
   text-align: left;
 }
 
-.card-title {
+.card-icon {
   color: rgb(33, 37, 41);
   color: var(--bs-dark);
 }

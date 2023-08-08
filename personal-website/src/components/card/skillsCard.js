@@ -29,7 +29,7 @@ const SkillCard = props => {
         {img != null && img }
         {isSkill && 
         <motion.div layout="position" className="card-img-top icon-card" style={style}>
-            <motion.h1 className="card-title position-absolute top-50 start-50 translate-middle" >{icon}</motion.h1>
+            <motion.h1 className="card-title card-icon position-absolute top-50 start-50 translate-middle" >{icon}</motion.h1>
         </motion.div>
         }
         <motion.div className="card-body">
