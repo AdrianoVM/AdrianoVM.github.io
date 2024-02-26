@@ -89,8 +89,10 @@
 }
 
 .vl {
-  width: 3px;
+  width: 6px;
   padding: 0%;
+  border-radius: 2px;
+  margin-top: -10px;
 }
 
 .icon-card {
@@ -113,6 +115,11 @@ main h2 {
   margin-bottom: 2rem;
 }
 
+.card-body {
+  border: 5px solid var(--bs-card-border-color);
+  margin-top: -5px;
+}
+
 .card .progress {
   border-radius: calc(.25rem - 1px);
   height: 12px;
@@ -126,6 +133,14 @@ main h2 {
 
 img{
   max-width: 80em;
+}
+
+.logitech {
+  background-color: #00B8FC;
+}
+
+.ses {
+  background-color: black;
 }
 
 .epfl {

@@ -14,7 +14,7 @@ const Card = props => {
             
         <div className="card-body">
         <h5 className="card-title">{date}</h5>
-            <ProgressBar striped animated={percent < 100 } variant="success" now={percent}/>
+            {percent > 0 ? <ProgressBar striped animated={percent < 100 } variant="success" now={percent}/> : null}
         
         <p className="card-text">{props.children} </p>
         </div>
