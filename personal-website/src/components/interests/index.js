@@ -18,7 +18,7 @@ const Interests = props => {
                 onClick={() => setSelectedTab(item)}>
                     <motion.div className="tabs" style={{background: item.color}}>
                     <MIcon icon={item.icon}/>
-                <AnimatePresence exitBeforeEnter>
+                <AnimatePresence mode="wait">
                 {item === selectedTab ? (
                     <motion.div className="underline" layoutId="underline" key={selectedTab ? selectedTab.icon : "empty"}
                     >
@@ -30,7 +30,7 @@ const Interests = props => {
             ))}
           </Row>
         <div style={{height : "4rem"}}>
-          <AnimatePresence exitBeforeEnter>
+          <AnimatePresence mode="wait">
             <motion.div
               key={selectedTab ? selectedTab.label : "empty"}
               initial={{ y: 10, opacity: 0 }}

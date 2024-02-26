@@ -3,7 +3,7 @@ import { adri } from '../images';
 import React from 'react';
 import Timeline from '../components/card/timeline';
 import { Link } from 'react-router-dom';
-import { faArrowAltCircleRight, faArrowLeftLong, faDiceD6, faFileAlt, faMedal, faStar, faUserGraduate, faNewspaper} from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight, faArrowLeftLong, faDiceD6, faFileAlt, faMedal, faStar, faUserGraduate, faNewspaper, faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NavButton from '../components/nav/button';
 import { HashLink } from 'react-router-hash-link';
@@ -39,6 +39,9 @@ const Home = () => {
           </div>
         
 
+          <h2 className="link-target" id="work"><FontAwesomeIcon icon={faBriefcase}/> Work Experience</h2>
+
+          <Timeline></Timeline>
                   
           <h2 className="link-target" id="education"><FontAwesomeIcon icon={faUserGraduate}/> Education</h2>
 
