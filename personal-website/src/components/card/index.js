@@ -9,12 +9,17 @@ const Card = props => {
     <motion.div className="card text-center h-100" id={title} 
     whileHover={{ scale: [null, 1.04] }} transition={{ duration: 0.2 }}>
         <div className={classnames('card-img-top icon-card', color)} >
-        <h1 className="card-title position-absolute top-50 start-50 translate-middle text-white pb-2" >{title}</h1>
+        <h1 className="card-title text-white pb-2 card-icon-title" >{title}</h1>
         </div>
             
         <div className="card-body">
         <h5 className="card-title">{date}</h5>
-            {percent > 0 ? <ProgressBar striped animated={percent < 100 } variant="success" now={percent}/> : null}
+            {Number.isFinite(percent) ? 
+            percent > 0 ? <ProgressBar striped animated={percent < 100 } variant="success" now={percent}/> : null
+            : 
+            <h4 className='alert alert-success'>{percent}</h4>
+            }
+
         
         <p className="card-text">{props.children} </p>
         </div>

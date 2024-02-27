@@ -30,7 +30,7 @@ const Home = () => {
                 <p className="my-3 m-md-3">
                   My name is <b>Adriano Viegas Milani</b>,
                   and this is my website.
-                  It is separated in 3 parts: <br/> Overview (this page), <Link to="projects">Projects</Link>, and <Link to="skills">Skills</Link>. <br/>
+                  It is separated in 3 parts: <br/> Overview (this page), <Link to="projects">Projects <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>, and <Link to="skills">Skills <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>. <br/>
                   I just finished my Master in Computer Science at EPFL in Switzerland, and I am curently looking for work! <br/>
                   In this page you can find my work experience, education, achievements, and interests below.
                   

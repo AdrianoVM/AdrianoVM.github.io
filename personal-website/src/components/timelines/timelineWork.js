@@ -2,45 +2,68 @@
 import Row from "./timeline";
 import Card from '../card';
 
+import { HashLink } from 'react-router-hash-link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons';
+
 const TimelineWork = () => {
+  let i = 0;
   return(
       <div>
-        <Row color="epfl" nb={4} content={
-          <Card title={"Maybe You"} date={"2024-"} color={"epfl"} percent={0}>
-          Master in Computer Science. Specialization in Signals Images and Interfaces.
+        <div className="row justify-content-center">
+          <div className="vl col-1 mb-3 future" style={{ height: 5 }} ></div>
+          <div className="col-11 d-md-none"></div>
+        </div>
+
+        <Row color="future" nb={i++} content={
+          <Card title={"Maybe You"} date={"2024-"} color={"future"} percent={"Software Engineer"}>
+          Anything that enhances users experience.
          </Card>
         }/>
 
-        <Row color="logitech" nb={3} content={
-          <Card title={"Logitech"} date={"2023-2024"} color={"logitech"} percent={0} >
-            <h3>Engineering Intern</h3>
+        <Row color="logitech" nb={i++} content={
+          <Card title={"Logitech"} date={"2023-2024"} color={"logitech"} percent={"Engineering Intern"} >
           Designing, prototyping and evaluating possible interaction techniques for 3D displays.
+          More information in the future in the Projects tab.
           <br/>
-          <div className="badge rounded-pill text-bg-primary m-2">Unity</div>
-          <div className="badge rounded-pill text-bg-primary m-2">C#</div>
-          <div className="badge rounded-pill text-bg-primary m-2">Python</div> <br/>
+          <span className="badge rounded-pill text-bg-primary m-2">Unity</span>
+          <span className="badge rounded-pill text-bg-primary m-2">C#</span>
+          <span className="badge rounded-pill text-bg-primary m-2">Python</span> <br/>
+          
+        </Card>
+        }/>
+
+        <Row color="epfl" nb={i++} content={
+          <Card title={"EPFL"} date={"Spring 2023"} color={"epfl"} percent={"VR Assistant"} >
+          Preparing headsets for the VR course given by Dr. Boulic. Assisting and Guiding Students on their VR Game projects
+          <br/>
+          <span className="badge rounded-pill text-bg-primary m-2">Unity</span>
+          <span className="badge rounded-pill text-bg-primary m-2">C#</span>
           
         </Card>
         }/>
         
-        <Row color="unilu" nb={2} content={
-          <Card title={"University of Luxembourg"} date={"2018-2021"} color={"unilu"} percent={100} >
-          Bachelor in Computer Science, average of 17.8/20.
+        <Row color="unilu" nb={i++} content={
+          <Card title={"University of Luxembourg"} date={"Summer 2021"} color={"unilu"} percent={"Summer Intern"} >
+          Working on version 0.4 of Forest SaVR.
+          More details in the <HashLink to="/projects#forest-savr3">project page <FontAwesomeIcon icon={faArrowAltCircleRight}/></HashLink>
+          <br/>
+          <span className="badge rounded-pill text-bg-primary m-2">Unity</span>
+          <span className="badge rounded-pill text-bg-primary m-2">C#</span>
         </Card>
         }/>
         
-        <Row color="ses" nb={1} content={
-          <Card title={"SES Satellites"} date={"Summer 2018"} color={"ses"} percent={0} >
-          French High School of Luxembourg.<br/> Scientific section with specialization in mathematics. <br/>
-          Baccalauréat mention Très bien
+        <Row color="ses" nb={i++} content={
+          <Card title={"SES Satellites"} date={"July 2018"} color={"ses"} percent={"Summer Intern"} >
+          Satellite data analysis using VBA.
           <br/>
-          <div className="badge rounded-pill text-bg-primary m-2">Excel</div>
-          <div className="badge rounded-pill text-bg-primary m-2">VBA</div>
+          <span className="badge rounded-pill text-bg-primary m-2">Excel</span>
+          <span className="badge rounded-pill text-bg-primary m-2">VBA</span>
         </Card>
         }/>
         
         <div className="row justify-content-center">
-          <div className="vl col-1 mt-1 vauban" style={{ height: 5 }} ></div>
+          <div className="vl col-1 mt-1 ses" style={{ height: 5 }} ></div>
           <div className="col-11 d-md-none"></div>
         </div>
 
