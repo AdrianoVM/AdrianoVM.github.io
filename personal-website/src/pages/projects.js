@@ -61,14 +61,23 @@ const Projects = () => {
           - Made in 2022, as part of the Virtual Reality course at EPFL.
           </ProjectCard>
 
+          <ProjectCard title={<div>Forest SaVR 0.3 <FontAwesomeIcon icon={faVrCardboard}/> </div>} 
+          subtitle={<p className="lead">A Virtual-Reality application to raise awareness of deforestation&nbsp;<FontAwesomeIcon icon={faTree}/>.</p>}
+          id={"forest-savr3"} media={<div  className="ratio ratio-16x9 my-3"><iframe src="https://www.youtube.com/embed/0zZyTZPYWX4" title="Forest SaVR 0.3 - BSP6 Presentation" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>}>
+            Forest SaVR 0.3 is developed as the third part of a multi-semester project for the Bachelor in Computer Science of the University of Luxembourg.
+            This project is made as part of the <a href="https://vrarlab.uni.lu/">VR/AR LAB</a> with Jean Botev and is developed with <a href="https://unity.com/">Unity <FontAwesomeIcon icon={faUnity}/></a>.<br/><br/>
+            Version 0.3 completely reworks the concept, adding interaction, a small narrative where we can actually impact forest states, and a huge graphical update.<br/>
+            Version 0.4 was developped as a summer project, with enhanced accessibility, and added necessary structure for a complete game. This version does not have a dedicated video, but is visually similar to v0.3.<br/><br/>
+            - Made in 2021, as part of BSP6.
+          </ProjectCard>
+
           <ProjectCard title={<div>Forest SaVR 0.1 <FontAwesomeIcon icon={faVrCardboard}/> </div>} 
           subtitle={<p className="lead">A Virtual-Reality application to raise awareness of deforestation&nbsp;<FontAwesomeIcon icon={faTree}/>.</p>}
           id={"forest-savr"} media={<div  className="ratio ratio-16x9 my-3"><iframe src="https://www.youtube.com/embed/E93NYJ476wk" title="Uni.lu Project Forest SaVR" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>}>
             Forest SaVR 0.1 is developed as the first part of a multi-semester project for the Bachelor in Computer Science of the University of Luxembourg.
             This project is made as part of the <a href="https://vrarlab.uni.lu/">VR/AR LAB</a> with Jean Botev and is developed with <a href="https://unity.com/">Unity <FontAwesomeIcon icon={faUnity}/></a>.
-            Forest SaVR received the <b>best demo/poster award</b> at the 2020 GI VR/AR Workshop in Trier, Germany.
-            A newer version is in development, as part of BSP5 and BSP6, and our objective is to transform it into a playable, enjoyable, and educative serious game. <br/><br/>
-            - Version showed was made in 2019, as part of BSP3.
+            Forest SaVR received the <b>best demo/poster award</b> at the 2020 GI VR/AR Workshop in Trier, Germany.<br/><br/>
+            - Made in 2019, as part of BSP3.
           </ProjectCard>
         
 

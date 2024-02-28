@@ -29,10 +29,11 @@ const Home = () => {
               <div className="col-12 col-md-7 text-start">
                 <p className="my-3 m-md-3">
                   My name is <b>Adriano Viegas Milani</b>,
-                  and this is my website.
-                  It is separated in 3 parts: <br/> Overview (this page), <Link to="projects">Projects <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>, and <Link to="skills">Skills <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>. <br/>
+                  and this is my website.<br/>
+                  It features 3 parts: Overview (this page), <Link to="projects">Projects <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>, and <Link to="skills">Skills <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>. 
+                  <br/><br/>
                   I just finished my Master in Computer Science at EPFL in Switzerland, and I am curently looking for work! <br/>
-                  In this page you can find my work experience, education, achievements, and interests below.
+                  In this page you can find my <HashLink to="#work"><b>work experience</b></HashLink>, <HashLink to="#education"><b>education</b></HashLink>, <HashLink to="#publications"><b>publications</b></HashLink>, and <HashLink to="#interests"><b>interests</b></HashLink> below.
                   
                 </p>
               </div>

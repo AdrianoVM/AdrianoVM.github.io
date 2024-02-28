@@ -10,10 +10,10 @@ const TimelineWork = () => {
   let i = 0;
   return(
       <div>
-        <div className="row justify-content-center">
+        {/* <div className="row justify-content-center">
           <div className="vl col-1 mb-3 future" style={{ height: 5 }} ></div>
           <div className="col-11 d-md-none"></div>
-        </div>
+        </div> */}
 
         <Row color="future" nb={i++} content={
           <Card title={"Maybe You"} date={"2024-"} color={"future"} percent={"Software Engineer"}>
