@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.376843fa.css",
-    "main.js": "/static/js/main.b136dfe7.js",
-    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "main.css": "/static/css/main.3267a4ab.css",
+    "main.js": "/static/js/main.bd457116.js",
+    "static/js/453.253ccfac.chunk.js": "/static/js/453.253ccfac.chunk.js",
     "static/media/final.png": "/static/media/final.68c15cce538cf4e581d1.png",
     "static/media/bsp1.png": "/static/media/bsp1.5624d8a13a61d58b04de.png",
     "static/media/adrianoMalmo.jpg": "/static/media/adrianoMalmo.3634a28f9a072d9a251f.jpg",
@@ -16,12 +16,12 @@
     "static/media/Flag_of_the_United_Kingdom.svg": "/static/media/Flag_of_the_United_Kingdom.fd46970f89e3fbca473f57e811916ea0.svg",
     "static/media/Flag_of_France.svg": "/static/media/Flag_of_France.37a6930985491edc711eb82e4a327fcf.svg",
     "static/media/Flag_of_Italy.svg": "/static/media/Flag_of_Italy.c1dbbc414c71d2e5b4cca87f8c6df9f0.svg",
-    "main.376843fa.css.map": "/static/css/main.376843fa.css.map",
-    "main.b136dfe7.js.map": "/static/js/main.b136dfe7.js.map",
-    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
+    "main.3267a4ab.css.map": "/static/css/main.3267a4ab.css.map",
+    "main.bd457116.js.map": "/static/js/main.bd457116.js.map",
+    "453.253ccfac.chunk.js.map": "/static/js/453.253ccfac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.376843fa.css",
-    "static/js/main.b136dfe7.js"
+    "static/css/main.3267a4ab.css",
+    "static/js/main.bd457116.js"
   ]
 }
