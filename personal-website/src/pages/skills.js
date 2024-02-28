@@ -105,7 +105,7 @@ const Skills = () => {
         </SkillCard>
 
         <SkillCard title={"Tensorflow"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-tensorflow"} width={windowSize.innerWidth}
-          icon={<motion.img layout src={tensorflowLogo} className="img-fluid col-12" alt="Logo of Tensorflow"/>} style={{backgroundColor: '#FF6F00'}} stars={2}>
+          icon={<motion.img layout src={tensorflowLogo} className="img-fluid col-12" alt="Logo of Tensorflow"/>} style={{backgroundColor: '#FF6F00'}} stars={1}>
           Learned in the Machine Learning course at <HashLink to="/#EPFL">EPFL</HashLink>.
         </SkillCard>
 

@@ -1,6 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import { HashLink } from 'react-router-hash-link';
-import { faArrowAltCircleRight, faVrCardboard, faTree, faToolbox} from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight, faVrCardboard, faTree, faToolbox, faStar} from '@fortawesome/free-solid-svg-icons';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Publications() {
@@ -9,7 +10,9 @@ function Publications() {
       <Accordion.Item eventKey="0">
         <Accordion.Header><b><FontAwesomeIcon icon={faVrCardboard}/> Cybersickness Assessment Framework <FontAwesomeIcon icon={faToolbox}/></b></Accordion.Header>
         <Accordion.Body>
-          Published in the 2023 IEEE Conference on Virtual Reality and 3D User Interfaces. Available <a href='https://ieeexplore.ieee.org/abstract/document/10108853'>here</a>. More details in <HashLink to="/projects#csaf">project page <FontAwesomeIcon icon={faArrowAltCircleRight}/></HashLink><br/><br/>
+          Published in the 2023 IEEE Conference on Virtual Reality and 3D User Interfaces. Available <a href='https://ieeexplore.ieee.org/abstract/document/10108853'>here</a>.<br/>
+          <FontAwesomeIcon icon={faStar}/> Best demo/poster award at the conference !
+          More details in <HashLink to="/projects#csaf">project page <FontAwesomeIcon icon={faArrowAltCircleRight}/></HashLink><br/><br/>
           <b>Abstract:</b><br/>
           Studies of cybersickness (CS) often require a significant investment in creating the primary VR environment and other experiment-related features.
           In addition, minor differences in VR content in independent studies may lead to opposite results.
