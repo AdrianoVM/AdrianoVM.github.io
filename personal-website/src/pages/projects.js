@@ -1,9 +1,9 @@
 import React from 'react';
-import { proofGuideImg, bsp1, acg } from '../images';
+import { proofGuideImg, bsp1, acg, pressure, interactions3d } from '../images';
 import ProjectCard from '../components/card/projectCard';
 import { Button } from 'react-bootstrap';
 import {motion} from 'framer-motion';
-import { faVrCardboard, faTree, faLink, faEllipsisV, faUtensils, faMountainSun, faNewspaper} from '@fortawesome/free-solid-svg-icons';
+import { faVrCardboard, faTree, faLink, faEllipsisV, faUtensils, faMountainSun, faNewspaper, faPen, faCube} from '@fortawesome/free-solid-svg-icons';
 import {faWindowMaximize} from '@fortawesome/free-regular-svg-icons';
 import { faUnity } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,9 +21,39 @@ const Projects = () => {
           <p className="my-3 m-md-3">
             Here is a list of projects I worked on in the past years, or I am currently working on.
             Currently all projects shown were worked on as part of university projects, Those before 2021 are from the Bachelor Semester Projects (BSP) of the Bachelor in Computer Science at the University of Luxembourg.
-            From 2021 to 2023, the projects where made in the context of a Master at EPFL.
+            From 2021 to 2024, the projects where made in the context of a Master at EPFL.
 
           </p>
+
+          <ProjectCard title={<div>3D Interactions&nbsp;<FontAwesomeIcon icon={faCube}/></div>}
+          subtitle={<p className="lead">A scalable Unity application to study 3D interaction.</p>}
+          id={"3dinteractions"} media={<img src={interactions3d} className="img-fluid my-3" alt="Final Render for competition"/>}>
+          
+          The 3D Interactions application features 4 tasks that encompass most of the different actions done by 3D artists and engineers.
+          Each task allows for training and grading performance, while logging extra data for analysis.<br/><br/>
+          Using Unity's input system, we built an easily extendable device system to interact with these tasks.
+          These devices are separated in two types: 2D and 3D and interact in very different ways.
+          In the first version we have 3 devices: mouse, drawing tablet, VR controller
+
+          The study done as part of this project <b>resulted in a published paper</b> presented during the 2024 IEEE Conference on Gaming, Entertainment, and Media.
+          <br/><br/>
+          - Version showed was made in 2023-2024, then published in 2024, as part of the master project with Logitech and the Immersive Interaction Group at EPFL.
+          </ProjectCard>
+
+          <ProjectCard title={<div>Pressure Study&nbsp;<FontAwesomeIcon icon={faPen}/></div>}
+          subtitle={<p className="lead">A study on pressure precision with a 6DoF stylus / controller.</p>}
+          id={"pressure"} media={<img src={pressure} className="img-fluid my-3" alt="Showcase of the app in action"/>}>
+          Pressure sensitive inputs are an important feature for many XR design and creativity applications.
+          This is typically accomplished using the trigger input on the default platform 6DoF controller.<br/><br/>
+          But what about a 3D tracked stylus, how do you deal with pressure and with which finger?<br/><br/>
+          This project, involves the creation of an Unity app to compare the performance of the quest controller trigger to that of the isometric main button of a prototype stylus device.
+          The force sensor on the stylus is activated with either the thumb or the index finger.
+          The pilot study done as part of this project <b>resulted in a published paper</b> presented during the 2024 IEEE Conference on Gaming, Entertainment, and Media.<br/>
+
+          Objectively, there were no significant differences between the devices. Subjectively, stylus index finger pressure control was the preferred interaction technique for most participants.
+          T<br/><br/>
+          - Version showed was made in 2023, then published in 2024, as part of the master project with Logitech and the Immersive Interaction Group at EPFL.
+          </ProjectCard>
 
           <ProjectCard title={<div>Cybersickness Assessment Framework&nbsp;<FontAwesomeIcon icon={faVrCardboard}/></div>}
           subtitle={<p className="lead">An open source Unity framework to assist cybersickness research.</p>}

@@ -15,9 +15,12 @@ const TimelineWork = () => {
           <div className="col-11 d-md-none"></div>
         </div> */}
 
-        <Row color="future" nb={i++} content={
-          <Card title={"Maybe You"} date={"2024-"} color={"future"} percent={"Software Engineer"}>
-          Anything that enhances users experience.
+        <Row color="epfl" nb={i++} content={
+          <Card title={"EPFL"} date={"2024-"} color={"epfl"} percent={"Software Engineer"}>
+          Many projects, but the main one for now is the augmentation of the Panorama of the Battle of Murten.
+          <br/>
+          <span className="badge rounded-pill text-bg-primary m-2">Unreal</span>
+          <span className="badge rounded-pill text-bg-primary m-2">C++</span><br/>
          </Card>
         }/>
 

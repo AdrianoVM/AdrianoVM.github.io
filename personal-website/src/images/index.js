@@ -11,6 +11,8 @@ import proofGuideImg from './proof-guide.png'
 // import adri from './adriano.png';
 import adri from './adrianoMalmo.jpg';
 import acg from './final.png';
+import pressure from './PressureExperimentDemo.gif';
+import interactions3d from './interactions3d.png';
 
 
 export {
@@ -25,5 +27,7 @@ export {
     bsp1,
     proofGuideImg,
     adri,
-    acg
+    acg,
+    pressure,
+    interactions3d
 };
