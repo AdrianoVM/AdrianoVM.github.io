@@ -78,12 +78,12 @@ const Skills = () => {
 
         <div className="w-100 d-none d-md-block"></div>
 
-        <SkillCard title={"Unreal"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-unreal"} width={windowSize.innerWidth}
-                   icon={<motion.img layout src={ueIcon} className="img-fluid col-3 col-md-3 col-lg-3" alt="Logo of DaVinci Resolve"/>} style={{backgroundColor: '#dddddd'}} stars={3}>
+        <SkillCard title={"Unreal Engine"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-unreal"} width={windowSize.innerWidth}
+                   icon={<motion.img layout src={ueIcon} className="img-fluid col-3 col-md-3 col-lg-3" alt="Logo of DaVinci Resolve"/>} style={{backgroundColor: '#000000'}} stars={3}>
           Learned through all the projects developed at eM+.
         </SkillCard>
         <SkillCard title={"C++"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-C++"} width={windowSize.innerWidth}
-          icon={"C++"} style={{backgroundColor: '#000000'}} stars={3}>
+          icon={"C++"} style={{backgroundColor: '#5E97D0'}} stars={3}>
           Learned through Unreal Engine development at eM+, and the <HashLink to="/projects#acg">ray tracing</HashLink> project which is entirely written in c++.
 
         </SkillCard>

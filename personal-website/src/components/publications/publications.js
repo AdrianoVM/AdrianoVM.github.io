@@ -1,6 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
 import { HashLink } from 'react-router-hash-link';
-import { faArrowAltCircleRight, faVrCardboard, faTree, faToolbox, faStar, faMouse, faCube, faPen, faFingerprint} from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight, faVrCardboard, faTree, faToolbox, faStar, faMouse, faCube, faPen, faFingerprint, faBookOpen, faImage} from '@fortawesome/free-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -8,7 +8,7 @@ function Publications() {
   return (
     <Accordion>
       <Accordion.Item eventKey="0">
-        <Accordion.Header><b><FontAwesomeIcon icon={faMouse}/> Entangled Gazes: Reconstituting the Stereoscopic Box Set with LLMs and Virtual Reality <FontAwesomeIcon icon={faCube}/></b></Accordion.Header>
+        <Accordion.Header><b><FontAwesomeIcon icon={faBookOpen}/> Entangled Gazes: Reconstituting the Stereoscopic Box Set with LLMs and Virtual Reality <FontAwesomeIcon icon={faImage}/></b></Accordion.Header>
         <Accordion.Body>
           Published in the SIGGRAPH Asia 2025 Art Papers.<br/>
 
@@ -22,7 +22,7 @@ function Publications() {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header><b><FontAwesomeIcon icon={faMouse}/> Forest SaVR: A Virtual-Reality Serious Game to Raise Awareness of Deforestation <FontAwesomeIcon icon={faCube}/></b></Accordion.Header>
+        <Accordion.Header><b><FontAwesomeIcon icon={faVrCardboard}/> Forest SaVR: A Virtual-Reality Serious Game to Raise Awareness of Deforestation <FontAwesomeIcon icon={faTree}/></b></Accordion.Header>
         <Accordion.Body>
           Published as a chapter in the 2025 "Engineering Educational Games for a Sustainable Society" <br/>
 
@@ -39,7 +39,7 @@ function Publications() {
       </Accordion.Item>
 
       <Accordion.Item eventKey="2">
-        <Accordion.Header><b><FontAwesomeIcon icon={faMouse}/> Cybersickness Assessment Framework(TestBed): Towards a Standardization of Experiments <FontAwesomeIcon icon={faCube}/></b></Accordion.Header>
+        <Accordion.Header><b><FontAwesomeIcon icon={faToolbox}/> Cybersickness Assessment Framework(TestBed): Towards a Standardization of Experiments <FontAwesomeIcon icon={faVrCardboard}/></b></Accordion.Header>
         <Accordion.Body>
           Published in arXiv e-prints in 2025 <br/>
 
