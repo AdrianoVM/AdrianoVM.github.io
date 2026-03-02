@@ -4,7 +4,6 @@ import brazilianFlag from './Flag_of_Brazil.svg';
 import italianFlag from './Flag_of_Italy.svg';
 import latexLogo from './LaTeX_logo.svg';
 import pytorchLogo from './PyTorch_logo_black.svg';
-import tensorflowLogo from './TF_White_Primary_Horizontal.svg';
 import davinciLogo from './DaVinci_Resolve_12_logo.png';
 import bsp1 from './bsp1.png';
 import proofGuideImg from './proof-guide.png'
@@ -13,6 +12,7 @@ import adri from './adrianoMalmo.jpg';
 import acg from './final.png';
 import pressure from './PressureExperimentDemo.gif';
 import interactions3d from './interactions3d.png';
+import ueIcon from './UE_Icon.svg';
 
 
 export {
@@ -22,7 +22,7 @@ export {
     italianFlag,
     latexLogo,
     pytorchLogo,
-    tensorflowLogo,
+    ueIcon,
     davinciLogo,
     bsp1,
     proofGuideImg,

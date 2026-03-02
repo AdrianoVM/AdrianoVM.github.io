@@ -16,12 +16,12 @@ const Projects = () => {
         
         <main className="col-lg-11 col-xl-9 col-xxl-8 py-md-3 ps-xl-5 text-center" role="main">
 
-          <h1 className="display-1 hello pb-5 link-target" id="intro">Projects</h1>
+          <h1 className="display-1 hello pb-5 link-target" id="intro">University Projects</h1>
 
           <p className="my-3 m-md-3">
-            Here is a list of projects I worked on in the past years, or I am currently working on.
-            Currently all projects shown were worked on as part of university projects, Those before 2021 are from the Bachelor Semester Projects (BSP) of the Bachelor in Computer Science at the University of Luxembourg.
-            From 2021 to 2024, the projects where made in the context of a Master at EPFL.
+            Here is a list of University projects I worked on in the past years.
+            Those before 2021 are from the Bachelor Semester Projects (BSP) of the Bachelor in Computer Science at the University of Luxembourg.
+            From 2021 to 2024, the projects where made in the context of a Master in Computer Science at EPFL.
 
           </p>
 

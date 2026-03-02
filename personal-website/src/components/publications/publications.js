@@ -8,6 +8,51 @@ function Publications() {
   return (
     <Accordion>
       <Accordion.Item eventKey="0">
+        <Accordion.Header><b><FontAwesomeIcon icon={faMouse}/> Entangled Gazes: Reconstituting the Stereoscopic Box Set with LLMs and Virtual Reality <FontAwesomeIcon icon={faCube}/></b></Accordion.Header>
+        <Accordion.Body>
+          Published in the SIGGRAPH Asia 2025 Art Papers.<br/>
+
+          More details in <a href={"https://epfl-emplus.github.io/EntangledGazes/"}>the paper website <FontAwesomeIcon icon={faArrowAltCircleRight}/></a><br/><br/>
+          <b>Abstract:</b><br/>
+          This paper presents a computational framework for critically reinterpreting colonial-era stereoscopic box sets.
+          Using James Ricalton's China through the Stereoscope (1901) as a case study, we deconstruct its linear narrative using NLP methods for thematic modeling, semantic mapping, and colonial language identification.
+          This analysis informs two complementary artworks in a large-scale 360° VR environment that enables three-dimensional viewing of stereoscopic photographs.
+          Cross Eyed offers a guided experience, using the thematic models as lenses for inquiry and visually distinguishing identified rhetoric.
+          Latent Cartographies, in contrast, empowers users to freely navigate the archive’s raw semantic space, fostering diverse modes of experiential engagement with contested heritage.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header><b><FontAwesomeIcon icon={faMouse}/> Forest SaVR: A Virtual-Reality Serious Game to Raise Awareness of Deforestation <FontAwesomeIcon icon={faCube}/></b></Accordion.Header>
+        <Accordion.Body>
+          Published as a chapter in the 2025 "Engineering Educational Games for a Sustainable Society" <br/>
+
+          More details in <HashLink to="/projects#forest-savr3">project page <FontAwesomeIcon icon={faArrowAltCircleRight}/></HashLink><br/><br/>
+          <b>Abstract:</b><br/>
+          Deforestation is significantly shaping the climate and contributing to global warming. However, the issue often is perceived as abstract or geographically distant and thus hard to relate to.
+          Forest SaVR is a virtual reality (VR) serious game project responding to the growing disconnect between environmental awareness and proactive behavioral changes.
+          By immersing users in realistic forest environments, Forest SaVR engages them in witnessing the progressive deterioration of a forest, from pristine conditions to deforested and degraded states, while offering interactive opportunities to mitigate these outcomes.
+          Central research questions include the following: How can VR enhance environmental awareness through immersive and interactive experiences? Can challenge-based serious games influence user behavior and foster greater environmental responsibility?
+          Forest SaVR integrates these inquiries by combining task-based and experiential learning. Players are guided through objective-driven activities, enhanced by techniques like flash-forwards and points of interest (POIs) that visualize the impact of human action.
+          Users transition from observers to active participants, undertaking tasks such as extinguishing fires, planting trees, stopping illegal logging, or addressing forest pests.
+          These tasks symbolize real-world conservation efforts and help raise awareness of deforestation and its broader environmental impacts, including climate change.
+        </Accordion.Body>
+      </Accordion.Item>
+
+      <Accordion.Item eventKey="2">
+        <Accordion.Header><b><FontAwesomeIcon icon={faMouse}/> Cybersickness Assessment Framework(TestBed): Towards a Standardization of Experiments <FontAwesomeIcon icon={faCube}/></b></Accordion.Header>
+        <Accordion.Body>
+          Published in arXiv e-prints in 2025 <br/>
+
+          <b>Abstract:</b><br/>
+          Investigating cybersickness (CS) in virtual reality (VR) often requires significant resources to create the VR environment and manage other experiment-related aspects.
+          Additionally, slight differences in VR content across studies can lead to conflicting results. To address these challenges, we propose a standardized assessment framework to facilitate cybersickness research.
+          The main goal is to enable consistent and comparable CS-related experiments. By establishing this common foundation, researchers can better evaluate and compare the impact of various factors on cybersickness.
+          We provide a comprehensive explanation of the conceptual designs, detail the technical implementation, and offer instructions for using the proposed framework.
+          Lastly, we conclude by discussing the limitations and potential avenues for future development.
+        </Accordion.Body>
+      </Accordion.Item>
+
+      <Accordion.Item eventKey="3">
         <Accordion.Header><b><FontAwesomeIcon icon={faMouse}/> Comparison of Mouse, 6DoF Controller and Pen Interactions on a Glasses-Free 3D Display <FontAwesomeIcon icon={faCube}/></b></Accordion.Header>
         <Accordion.Body>
         Published in the 2024 IEEE GEM Conference on Gaming, Entertainment and Media. No link Available yet. <br/>
@@ -23,7 +68,7 @@ function Publications() {
         </Accordion.Body>
       </Accordion.Item>
 
-      <Accordion.Item eventKey="1">
+      <Accordion.Item eventKey="4">
         <Accordion.Header><b><FontAwesomeIcon icon={faFingerprint}/> Comparison of XR Game Controller Trigger Input Versus Isometric Thumb and Index Finger Pressure Input on a Stylus <FontAwesomeIcon icon={faPen}/></b></Accordion.Header>
         <Accordion.Body>
         Published in the 2024 IEEE GEM Conference on Gaming, Entertainment and Media. No link Available yet. <br/>
@@ -40,7 +85,7 @@ function Publications() {
         </Accordion.Body>
       </Accordion.Item>
 
-      <Accordion.Item eventKey="2">
+      <Accordion.Item eventKey="5">
         <Accordion.Header><b><FontAwesomeIcon icon={faVrCardboard}/> Cybersickness Assessment Framework <FontAwesomeIcon icon={faToolbox}/></b></Accordion.Header>
         <Accordion.Body>
           Published in the 2023 IEEE Conference on Virtual Reality and 3D User Interfaces. Available <a href='https://ieeexplore.ieee.org/abstract/document/10108853'>here</a>.<br/>
@@ -54,7 +99,7 @@ function Publications() {
         </Accordion.Body>
       </Accordion.Item>
 
-      <Accordion.Item eventKey="3">
+      <Accordion.Item eventKey="6">
         <Accordion.Header><b><FontAwesomeIcon icon={faTree}/> Forest SaVR <FontAwesomeIcon icon={faVrCardboard}/></b></Accordion.Header>
         <Accordion.Body>
         Published in the 2020 GI VR / AR Workshop, Gesellschaft für Informatik. Available <a href='https://dl.gi.de/server/api/core/bitstreams/43625e2e-995c-439f-a85b-ed29fffed164/content'>here</a>. <br/>

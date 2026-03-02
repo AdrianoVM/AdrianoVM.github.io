@@ -30,9 +30,9 @@ const Home = () => {
                 <p className="my-3 m-md-3">
                   My name is <b>Adriano Viegas Milani</b>,
                   and this is my website.<br/>
-                  It features 3 parts: Overview (this page), <Link to="projects">Projects <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>, and <Link to="skills">Skills <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>. 
+                  It features 3 parts: Overview (this page), <Link to="projects">University Projects <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>, and <Link to="skills">Skills <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>.
                   <br/><br/>
-                  I just finished my Master in Computer Science at EPFL in Switzerland, and I am curently looking for work! <br/>
+                  I'm a Software Engineer at the laboratory for experimental Museology (eM+) at EPFL in Switzerland.<br/>
                   In this page you can find my <HashLink to="#work"><b>work experience</b></HashLink>, <HashLink to="#education"><b>education</b></HashLink>, <HashLink to="#publications"><b>publications</b></HashLink>, and <HashLink to="#interests"><b>interests</b></HashLink> below.
                   
                 </p>

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import { englishFlag, frenchFlag, brazilianFlag, italianFlag, latexLogo, pytorchLogo, tensorflowLogo, davinciLogo } from '../images';
+import { englishFlag, frenchFlag, brazilianFlag, italianFlag, latexLogo, pytorchLogo, ueIcon, davinciLogo } from '../images';
 import { faGlobeAmericas, faToolbox } from '@fortawesome/free-solid-svg-icons';
-import { faPython, faUnity, faHtml5, faCss3Alt, faBootstrap, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons';
+import { faPython, faUnity, faHtml5, faCss3Alt} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SkillCard from '../components/card/skillsCard';
 import { Row } from 'react-bootstrap';
@@ -78,52 +78,34 @@ const Skills = () => {
 
         <div className="w-100 d-none d-md-block"></div>
 
+        <SkillCard title={"Unreal"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-unreal"} width={windowSize.innerWidth}
+                   icon={<motion.img layout src={ueIcon} className="img-fluid col-3 col-md-3 col-lg-3" alt="Logo of DaVinci Resolve"/>} style={{backgroundColor: '#dddddd'}} stars={3}>
+          Learned through all the projects developed at eM+.
+        </SkillCard>
+        <SkillCard title={"C++"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-C++"} width={windowSize.innerWidth}
+          icon={"C++"} style={{backgroundColor: '#000000'}} stars={3}>
+          Learned through Unreal Engine development at eM+, and the <HashLink to="/projects#acg">ray tracing</HashLink> project which is entirely written in c++.
+
+        </SkillCard>
         <SkillCard title={"HTML & CSS"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-html"} width={windowSize.innerWidth}
           icon={<motion.div><nobr><MIcon icon={faHtml5}/> & <MIcon icon={faCss3Alt}/></nobr></motion.div>} style={{backgroundColor: '#E44D26'}} stars={3}>
           Learned through the <HashLink to="/projects#bsp1">Visual Representation of Legal Concepts</HashLink>, <HashLink to="/projects#proof-guide">Proof Guide</HashLink> projects, and when building this website.
         </SkillCard>
-        <SkillCard title={"Bootstrap"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-boot"} width={windowSize.innerWidth}
-          icon={<MIcon icon={faBootstrap}/>} style={{backgroundColor: '#7255AF'}} stars={3}>
-          Learned mainly through the <HashLink to="/projects#proof-guide">Proof Guide</HashLink> project and when building this website.
-        </SkillCard>
-        <SkillCard title={"React"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-react"} width={windowSize.innerWidth}
-          icon={<MIcon icon={faReact}/>} style={{backgroundColor: '#61dafb'}} stars={2}>
-          Learned when rebuilding this website in summer 2022.
-        </SkillCard>
-        
+
         <div className="w-100 d-none d-md-block"></div>
 
-        <SkillCard title={"Vue"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-vue"} width={windowSize.innerWidth}
-          icon={<MIcon icon={faVuejs}/>} style={{backgroundColor: '#41B883'}} stars={1}>
-          Learned through the <HashLink to="/projects#bsp1">Visual Representation of Legal Concepts</HashLink>,
-          and <HashLink to="/projects#proof-guide">Proof Guide</HashLink> projects.
-        </SkillCard>
-        
         <SkillCard title={"Pytorch"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-torch"} width={windowSize.innerWidth}
-          icon={<motion.img layout src={pytorchLogo} className="img-fluid col-9" alt="Logo of PyTorch"/>} style={{backgroundColor: '#EEF0F3'}} stars={2}>
+          icon={<motion.img layout src={pytorchLogo} className="img-fluid col-9" alt="Logo of PyTorch"/>} style={{backgroundColor: '#EEF0F3'}} stars={1}>
           Learned in the Deep Learning and image processing courses at <HashLink to="/#EPFL">EPFL</HashLink>.
-        </SkillCard>
-
-        <SkillCard title={"Tensorflow"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-tensorflow"} width={windowSize.innerWidth}
-          icon={<motion.img layout src={tensorflowLogo} className="img-fluid col-12" alt="Logo of Tensorflow"/>} style={{backgroundColor: '#FF6F00'}} stars={1}>
-          Learned in the Machine Learning course at <HashLink to="/#EPFL">EPFL</HashLink>.
-        </SkillCard>
-
-        <div className="w-100 d-none d-md-block"></div>
-
-        <SkillCard title={"C++"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-C++"} width={windowSize.innerWidth}
-          icon={"C++"} style={{backgroundColor: '#5E97D0'}} stars={2}>
-          Learned through the <HashLink to="/projects#acg">ray tracing</HashLink> project which is entirely written in c++.
-          
         </SkillCard>
 
         <SkillCard title={"LaTeX"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-latex"} width={windowSize.innerWidth}
           icon={<motion.img layout src={latexLogo} className="img-fluid col-9" alt="Logo of Latex"/>} style={{backgroundColor: '#407D7F'}} stars={2}>
-          Learned through all bachelor semester projects, when writing the reports, and many other courses.
+          Learned through all the papers published, and bachelor semester project reports.
         </SkillCard>
         <SkillCard title={"Davinci Resolve"} skillOpen={skillOpen} setSkillOpen={setSkillOpen} listId={"skill-resolve"} width={windowSize.innerWidth}
-          icon={<motion.img layout src={davinciLogo} className="img-fluid col-3 col-md-3 col-lg-3" alt="Logo of DaVinci Resolve"/>} style={{backgroundColor: '#E7873B'}} stars={2}>
-          Editing software learned to create videos of the many projects shocased in the <NavLink to="/projects"> Projects</NavLink> page.
+          icon={<motion.img layout src={davinciLogo} className="img-fluid col-3 col-md-3 col-lg-3" alt="Logo of DaVinci Resolve"/>} style={{backgroundColor: '#E7873B'}} stars={1}>
+          Editing software learned to create videos of the many projects showcased in the <NavLink to="/projects"> Projects</NavLink> page.
         </SkillCard>
         </Row>
         </LayoutGroup>

@@ -1,6 +1,7 @@
 
 import Row from "./timeline";
 import Card from '../card';
+import { Link } from 'react-router-dom';
 
 import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,7 +18,7 @@ const TimelineWork = () => {
 
         <Row color="epfl" nb={i++} content={
           <Card title={"EPFL"} date={"2024-"} color={"epfl"} percent={"Software Engineer"}>
-          Many projects, but the main one for now is the augmentation of the Panorama of the Battle of Murten.
+              Implementation and Installed multiple projects, mainly the <a href={"https://www.epfl.ch/labs/emplus/projects/terapixelpanorama/"}>Terapixel Panorama</a>.
           <br/>
           <span className="badge rounded-pill text-bg-primary m-2">Unreal</span>
           <span className="badge rounded-pill text-bg-primary m-2">C++</span><br/>
@@ -26,8 +27,7 @@ const TimelineWork = () => {
 
         <Row color="logitech" nb={i++} content={
           <Card title={"Logitech"} date={"2023-2024"} color={"logitech"} percent={"Engineering Intern"} >
-          Designing, prototyping and evaluating possible interaction techniques for 3D displays.
-          More information in the future in the Projects tab.
+          Designed, prototyped and evaluated possible interaction techniques for 3D displays.
           <br/>
           <span className="badge rounded-pill text-bg-primary m-2">Unity</span>
           <span className="badge rounded-pill text-bg-primary m-2">C#</span>
@@ -37,8 +37,8 @@ const TimelineWork = () => {
         }/>
 
         <Row color="epfl" nb={i++} content={
-          <Card title={"EPFL"} date={"Spring 2023"} color={"epfl"} percent={"VR Assistant"} >
-          Preparing headsets for the VR course given by Dr. Boulic. Assisting and Guiding Students on their VR Game projects
+          <Card title={"EPFL"} date={"Spring 2023"} color={"epfl"} percent={"VR Course Assistant"} >
+          Assisted and Guided Students on their VR Game projects in the VR course given by Dr. Boulic.
           <br/>
           <span className="badge rounded-pill text-bg-primary m-2">Unity</span>
           <span className="badge rounded-pill text-bg-primary m-2">C#</span>
@@ -48,7 +48,7 @@ const TimelineWork = () => {
         
         <Row color="unilu" nb={i++} content={
           <Card title={"University of Luxembourg"} date={"Summer 2021"} color={"unilu"} percent={"Summer Intern"} >
-          Working on version 0.4 of Forest SaVR.
+          Developed version 0.4 of Forest SaVR.
           More details in the <HashLink to="/projects#forest-savr3">project page <FontAwesomeIcon icon={faArrowAltCircleRight}/></HashLink>
           <br/>
           <span className="badge rounded-pill text-bg-primary m-2">Unity</span>
@@ -58,7 +58,7 @@ const TimelineWork = () => {
         
         <Row color="ses" nb={i++} content={
           <Card title={"SES Satellites"} date={"July 2018"} color={"ses"} percent={"Summer Intern"} >
-          Satellite data analysis using VBA.
+          Analysed Satellite data using VBA.
           <br/>
           <span className="badge rounded-pill text-bg-primary m-2">Excel</span>
           <span className="badge rounded-pill text-bg-primary m-2">VBA</span>
